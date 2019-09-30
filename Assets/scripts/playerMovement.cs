@@ -91,7 +91,6 @@ public class playerMovement : MonoBehaviour
     private bool IsGrounded()
     {
         RaycastHit2D rch2d = Physics2D.BoxCast(rc2d.bounds.center, rc2d.bounds.size, 0, Vector2.down, 1, pllayerMask);
-        Debug.Log(rch2d);
         return rch2d;
     }
 }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
 {
+    public int health = 10;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,8 +14,17 @@ public class enemyHealth : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnCollisionEnter2D(Collision2D col)
     {
-        
+        if(col.gameObject.tag == "Player")
+        {
+            health = health-1;
+            Debug.Log("Health has reduced to: " + health);
+            
+        }
+        if (health <= 0f)
+        {
+            Destroy(gameObject);
+        }
     }
 }
