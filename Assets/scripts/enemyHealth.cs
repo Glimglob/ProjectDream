@@ -16,6 +16,7 @@ public class enemyHealth : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter2D(Collision2D col)
     {
+        //Add an && keydown x to see if that would work
         if(col.gameObject.tag == "Player")
         {
             health = health-1;
