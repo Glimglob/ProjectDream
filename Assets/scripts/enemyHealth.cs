@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class enemyHealth : MonoBehaviour
 {
-    public int health = 10;
-
+    
+    public int health = 5;
+    //https://www.youtube.com/watch?v=XKoSfm4DTFc
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +19,9 @@ public class enemyHealth : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         //Add an && keydown x to see if that would work
-        if(col.gameObject.tag == "Player")
+        if(col.gameObject.tag == "Player" && Input.GetMouseButton(0))
         {
+
             health = health-1;
             Debug.Log("Health has reduced to: " + health);
             
