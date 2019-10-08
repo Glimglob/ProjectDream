@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerHealthbar : MonoBehaviour
 {
-    public int playerHealth = 100;
+    public static int playerHealth = 100;
     public int mana = 100;
-    public int keyCounter;
+    public static int keyCounter;
     void Start()
     {
         
@@ -15,6 +15,11 @@ public class PlayerHealthbar : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        // bar transform
+        Transform hBar = transform.Find("hBar");
+        hBar.localScale = new Vector3(playerHealth * 4, 35f);
+        Transform mBar = transform.Find("mBar");
+        mBar.localScale = new Vector3(mana * 4, 35f);
         //Clamps
         playerHealth = Mathf.Clamp(playerHealth, 0, 100);
         mana = Mathf.Clamp(mana, 0, 100);
@@ -22,7 +27,7 @@ public class PlayerHealthbar : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             keyCounter++;
-            manadeplete();
+            Manadeplete();
         }
         // Special skills
         if (Input.GetKeyDown(KeyCode.X))
@@ -37,15 +42,16 @@ public class PlayerHealthbar : MonoBehaviour
                 }
             }
         }
-        // bar transform
-        Transform hBar = transform.Find("hBar");
-        hBar.localScale = new Vector3(playerHealth * 4, 35f);
-        Transform mBar = transform.Find("mBar");
-        mBar.localScale = new Vector3(mana * 4, 35f);
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+
+        }
+        // Health
+        
         
     }
     //Regular mana deplete
-    void manadeplete()
+    void Manadeplete()
     {
         if (keyCounter == 1)
         {
