@@ -30,13 +30,17 @@ public class PlayerHealthbar : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        
         //Regular skill
         if (Input.GetKeyDown(KeyCode.P))
         {
             
             combat.Manadeplete();
         }
-    
+        
+            
+        
+
 
         // Special skills
         if (Input.GetKeyDown(KeyCode.X))
