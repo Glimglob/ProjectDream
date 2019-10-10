@@ -34,8 +34,9 @@ public class PlayerHealthbar : MonoBehaviour
         //Regular skill
         if (Input.GetKeyDown(KeyCode.P))
         {
-            
+
             combat.Manadeplete();
+
         }
         
             
