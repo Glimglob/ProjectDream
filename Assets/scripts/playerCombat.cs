@@ -4,32 +4,44 @@ using UnityEngine;
 
 public class playerCombat : MonoBehaviour
 {
+    //Variables
     public static int damage = 1;
     public static int playerHealth = 100;
     public static int mana = 100;
     public static int keyCounter;
     public static int enemyhealth = 5;
+    //hitbox variables
     public Transform attackPos;
     public float attackRangeX;
     public float attackRangeY;
     public LayerMask enemy;
+    //health bar import
     public PlayerHealthbar bars;
+    //fireball
+    public Transform spawnPos;
+    public GameObject fireballObj;
 
     void Start()
     {
         StartCoroutine(manaregen());
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //import variables
         keyCounter = PlayerHealthbar.keyCounter;
         enemyhealth = enemyHealth.health;
+        //Health and mana clamps
         playerHealth = Mathf.Clamp(playerHealth, 0, 100);
         mana = Mathf.Clamp(mana, 0, 100);
+        //death
         if (playerHealth == 0)
         {
             Destroy(gameObject);
+        }
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            fireball();
         }
     }
     public void delog()
@@ -42,6 +54,7 @@ public class playerCombat : MonoBehaviour
         Debug.Log("P is pressed");
         if (keyCounter == 1 && mana >= 10)
         {
+            //hitbox
             Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
@@ -56,6 +69,7 @@ public class playerCombat : MonoBehaviour
         }
 
     }
+    //draw hitbox
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
@@ -84,6 +98,12 @@ public class playerCombat : MonoBehaviour
             }
         }
     }
+    public void fireball()
+    {
+        
+            Instantiate(fireballObj, spawnPos.position, spawnPos.rotation);
+        
+    }
     IEnumerator manaregen()
     {
         while (true)
@@ -105,4 +125,5 @@ public class playerCombat : MonoBehaviour
 
 
     }
+    
 }

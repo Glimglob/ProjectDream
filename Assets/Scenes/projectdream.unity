@@ -649,6 +649,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   bars: {fileID: 1808616551}
+  spawnPos: {fileID: 675957104}
+  fireballObj: {fileID: 1644132532531363183, guid: a6c873239e47a4c45b6d5c36bfb14f00,
+    type: 3}
 --- !u!1 &822716163
 GameObject:
   m_ObjectHideFlags: 0
