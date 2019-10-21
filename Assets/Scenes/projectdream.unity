@@ -500,6 +500,7 @@ GameObject:
   - component: {fileID: 675957103}
   - component: {fileID: 675957102}
   - component: {fileID: 675957101}
+  - component: {fileID: 675957106}
   - component: {fileID: 675957105}
   - component: {fileID: 675957100}
   m_Layer: 0
@@ -652,6 +653,22 @@ MonoBehaviour:
   spawnPos: {fileID: 675957104}
   fireballObj: {fileID: 1644132532531363183, guid: a6c873239e47a4c45b6d5c36bfb14f00,
     type: 3}
+--- !u!114 &675957106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675957099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afcf7dc106ce3747a095dd15991485e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 23.42
+  fireballObj: {fileID: 1644132532531363183, guid: a6c873239e47a4c45b6d5c36bfb14f00,
+    type: 3}
+  force: 0
 --- !u!1 &822716163
 GameObject:
   m_ObjectHideFlags: 0

@@ -100,9 +100,10 @@ public class playerCombat : MonoBehaviour
     }
     public void fireball()
     {
-        
-            Instantiate(fireballObj, spawnPos.position, spawnPos.rotation);
-        
+
+        GameObject fire = Instantiate(fireballObj, transform.position, Quaternion.identity) as GameObject;
+        fire.GetComponent<Rigidbody2D>().AddForce(transform.forward * 10);
+
     }
     IEnumerator manaregen()
     {
