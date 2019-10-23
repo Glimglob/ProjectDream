@@ -102,7 +102,7 @@ public class playerCombat : MonoBehaviour
     {
 
         GameObject fire = Instantiate(fireballObj, transform.position, Quaternion.identity) as GameObject;
-        fire.GetComponent<Rigidbody2D>().AddForce(transform.forward * 10);
+       
 
     }
     IEnumerator manaregen()
