@@ -8,7 +8,8 @@ public class FireballGo : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public CircleCollider2D cc2d;
-    public static int enemyHealth;
+    private playerCombat pc;
+
  
 
     // Start is called before the first frame update
@@ -16,8 +17,8 @@ public class FireballGo : MonoBehaviour
     {
         rb = transform.GetComponent<Rigidbody2D>();
         cc2d = transform.GetComponent<CircleCollider2D>();
-        GameObject rEnemy = GameObject.Find("enemy");
-        enemyHealth = playerCombat.enemyhealth;
+        
+        
 
 
     }
@@ -34,8 +35,9 @@ public class FireballGo : MonoBehaviour
         
         if (collision.name == "enemy")
         {
-
-            Destroy(collision.gameObject);
+            GameObject player = GameObject.Find("player");
+            var enemyhealth = player.GetComponent<playerCombat>();
+            int rEnemyhealth = enemyhealth.
         }
     }
 }

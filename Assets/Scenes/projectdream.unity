@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 675957105}
   - component: {fileID: 675957100}
   m_Layer: 0
-  m_Name: Main Character 1 clone
+  m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -28,6 +28,7 @@ public class playerCombat : MonoBehaviour
 
     void Update()
     {
+       
         //import variables
         keyCounter = PlayerHealthbar.keyCounter;
         enemyhealth = enemyHealth.health;
@@ -39,10 +40,7 @@ public class playerCombat : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            fireball();
-        }
+        
     }
     public void delog()
     {
@@ -100,10 +98,7 @@ public class playerCombat : MonoBehaviour
     }
     public void fireball()
     {
-
-        GameObject fire = Instantiate(fireballObj, transform.position, Quaternion.identity) as GameObject;
-       
-
+            GameObject fire = Instantiate(fireballObj, transform.position, Quaternion.identity) as GameObject;
     }
     IEnumerator manaregen()
     {
@@ -126,5 +121,11 @@ public class playerCombat : MonoBehaviour
 
 
     }
-    
+    public void adjustEnemyHealth()
+    {
+        Debug.Log("adjust works");
+        damage = 4;
+        enemyhealth = enemyhealth - damage;
+        print(enemyhealth);
+    }
 }
