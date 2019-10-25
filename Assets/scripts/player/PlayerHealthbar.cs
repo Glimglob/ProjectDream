@@ -48,6 +48,11 @@ public class PlayerHealthbar : MonoBehaviour
         {
             combat.Specialone();
         }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            combat.fireball();
+        }
         
         // Health
         
