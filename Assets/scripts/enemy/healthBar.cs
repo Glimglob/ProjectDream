@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class healthBar : MonoBehaviour
 {
-    public static int health;
+    public int health = 5;
     public SpriteRenderer rend;
     public Sprite health5, health4, health3, health2, health1;
     // Start is called before the first frame update
@@ -21,7 +21,6 @@ public class healthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        health = enemyHealth.health;
         if(health == 4)
         {
             rend.sprite = health4;
@@ -38,5 +37,11 @@ public class healthBar : MonoBehaviour
         {
             rend.sprite = health1;
         }
+    }
+    public void adjustEnemyHealth(int dam)
+    {
+        Debug.Log("adjust works");
+        health -= dam;
+        print(health);
     }
 }

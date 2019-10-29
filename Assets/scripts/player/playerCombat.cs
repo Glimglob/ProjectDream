@@ -5,7 +5,6 @@ using UnityEngine;
 public class playerCombat : MonoBehaviour
 {
     //Variables
-    public static int damage = 1;
     public static int playerHealth = 100;
     public static int mana = 100;
     public static int keyCounter;
@@ -31,7 +30,6 @@ public class playerCombat : MonoBehaviour
        
         //import variables
         keyCounter = PlayerHealthbar.keyCounter;
-        enemyhealth = enemyHealth.health;
         //Health and mana clamps
         playerHealth = Mathf.Clamp(playerHealth, 0, 100);
         mana = Mathf.Clamp(mana, 0, 100);
@@ -56,7 +54,8 @@ public class playerCombat : MonoBehaviour
             Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
-                enemyhealth -= 1;
+                healthBar HB = FindObjectOfType<healthBar>();
+                HB.adjustEnemyHealth(1);
             }
 
             //mana = mana - 10;
@@ -85,8 +84,8 @@ public class playerCombat : MonoBehaviour
                 Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    damage = 2;
-                    enemyhealth = enemyhealth - damage;
+                    healthBar HB = FindObjectOfType<healthBar>();
+                    HB.adjustEnemyHealth(2);
 
                 }
                 mana = mana - 20;
@@ -98,8 +97,18 @@ public class playerCombat : MonoBehaviour
     }
     public void fireball()
     {
-            GameObject fire = Instantiate(fireballObj, transform.position, Quaternion.identity) as GameObject;
+        if (mana >= 60)
+        {
+            keyCounter++;
+            if (keyCounter == 1)
+            {
+                GameObject fire = Instantiate(fireballObj, transform.position, Quaternion.identity) as GameObject;
+                mana -= 60;
+                keyCounter--;
+            }
+        }
     }
+    //manaregen
     IEnumerator manaregen()
     {
         while (true)
@@ -121,11 +130,6 @@ public class playerCombat : MonoBehaviour
 
 
     }
-    public void adjustEnemyHealth()
-    {
-        Debug.Log("adjust works");
-        damage = 4;
-        enemyhealth = enemyhealth - damage;
-        print(enemyhealth);
-    }
+    //damage taken
+    
 }

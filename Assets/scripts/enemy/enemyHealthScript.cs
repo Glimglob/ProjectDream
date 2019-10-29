@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class enemyHealth : MonoBehaviour
+public class enemyHealthScript : MonoBehaviour
 {
 
-    public static int health;
-    public static int damage;
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +18,7 @@ public class enemyHealth : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        health = playerCombat.enemyhealth;
-        damage = playerCombat.damage;
+        
     }
     private void Update()
     {
@@ -29,4 +28,7 @@ public class enemyHealth : MonoBehaviour
         }
 
     }
-}
+    
+
+    }
+

@@ -8,7 +8,6 @@ public class FireballGo : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public CircleCollider2D cc2d;
-    private playerCombat pc;
 
  
 
@@ -33,11 +32,10 @@ public class FireballGo : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        if (collision.name == "enemy")
+        if (collision.tag == "enemy")
         {
-            GameObject player = GameObject.Find("player");
-            var enemyhealth = player.GetComponent<playerCombat>();
-            int rEnemyhealth = enemyhealth.
+            healthBar HB = FindObjectOfType<healthBar>();
+            HB.adjustEnemyHealth(4);
         }
     }
 }
