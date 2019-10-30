@@ -54,8 +54,7 @@ public class playerCombat : MonoBehaviour
             Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
-                healthBar HB = FindObjectOfType<healthBar>();
-                HB.adjustEnemyHealth(1);
+                
             }
 
             //mana = mana - 10;

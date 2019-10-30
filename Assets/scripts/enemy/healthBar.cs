@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class healthBar : MonoBehaviour
 {
-    public int health = 5;
+    private int health;
     public SpriteRenderer rend;
     public Sprite health5, health4, health3, health2, health1;
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<SpriteRenderer>();
+        rend = this.GetComponent<SpriteRenderer>();
         health5 = Resources.Load<Sprite>("Health bar_0");
         health4 = Resources.Load<Sprite>("Health bar 4");
         health3 = Resources.Load<Sprite>("Health bar 3");
@@ -18,9 +18,14 @@ public class healthBar : MonoBehaviour
         health1 = Resources.Load<Sprite>("Health bar 1");
     }
 
+    private void Awake()
+    {
+        health = 5;
+    }
     // Update is called once per frame
     void Update()
     {
+      
         if(health == 4)
         {
             rend.sprite = health4;
@@ -37,11 +42,21 @@ public class healthBar : MonoBehaviour
         {
             rend.sprite = health1;
         }
+        if(isdead())
+        {
+            enemyDeath ED = FindObjectOfType<enemyDeath>();
+            ED.death();
+        }
     }
+
     public void adjustEnemyHealth(int dam)
     {
         Debug.Log("adjust works");
         health -= dam;
         print(health);
+    }
+    public bool isdead()
+    {
+        return health <= 0;
     }
 }
