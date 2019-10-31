@@ -34,8 +34,8 @@ public class FireballGo : MonoBehaviour
         
         if (collision.tag == "enemy")
         {
-            healthBar HB = FindObjectOfType<healthBar>();
-            HB.adjustEnemyHealth(4);
+            enemyDeath ED = FindObjectOfType<enemyDeath>();
+            ED.takeDamage(4);
         }
     }
 }
