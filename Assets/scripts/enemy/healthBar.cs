@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class healthBar : MonoBehaviour
 {
-    private int health;
+    public int health;
     public SpriteRenderer rend;
     public Sprite health5, health4, health3, health2, health1;
     // Start is called before the first frame update

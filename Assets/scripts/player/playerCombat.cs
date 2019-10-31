@@ -52,9 +52,10 @@ public class playerCombat : MonoBehaviour
         {
             //hitbox
             Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
+            
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
-                
+                enemiesToDamage[i].GetComponent<enemyDeath>().takeDamage(1);
             }
 
             //mana = mana - 10;
@@ -83,8 +84,7 @@ public class playerCombat : MonoBehaviour
                 Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
-                    healthBar HB = FindObjectOfType<healthBar>();
-                    HB.adjustEnemyHealth(2);
+                    enemiesToDamage[i].GetComponent<enemyDeath>().takeDamage(2);
 
                 }
                 mana = mana - 20;
@@ -129,6 +129,10 @@ public class playerCombat : MonoBehaviour
 
 
     }
-    //damage taken
+    void takedamage(int dam)
+    {
+        healthBar HB = FindObjectOfType<healthBar>();
+        HB.adjustEnemyHealth(dam);
+    }
     
 }
