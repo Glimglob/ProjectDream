@@ -129,10 +129,6 @@ public class playerCombat : MonoBehaviour
 
 
     }
-    void takedamage(int dam)
-    {
-        healthBar HB = FindObjectOfType<healthBar>();
-        HB.adjustEnemyHealth(dam);
-    }
+
     
 }

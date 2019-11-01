@@ -8,7 +8,7 @@ public class FireballGo : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public CircleCollider2D cc2d;
-
+    
  
 
     // Start is called before the first frame update
@@ -25,8 +25,15 @@ public class FireballGo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.rb.velocity = new Vector3(speed, 0, 0);
-
+        playerMovement PM = FindObjectOfType<playerMovement>();
+        if (PM.isRight == false)
+        {
+            this.rb.velocity = new Vector3(speed, 0, 0);
+        }
+        else if (PM.isRight == true)
+        {
+            this.rb.velocity = new Vector3(-speed, 0, 0);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,8 +41,8 @@ public class FireballGo : MonoBehaviour
         
         if (collision.tag == "enemy")
         {
-            enemyDeath ED = FindObjectOfType<enemyDeath>();
-            ED.takeDamage(4);
+            collision.GetComponent<enemyDeath>().takeDamage(4);
+            Destroy(gameObject);
         }
     }
 }
