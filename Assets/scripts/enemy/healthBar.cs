@@ -20,43 +20,30 @@ public class healthBar : MonoBehaviour
 
     private void Awake()
     {
-        health = 5;
     }
     // Update is called once per frame
     void Update()
     {
-      
-        if(health == 4)
+        health = GetComponentInParent<enemyDeath>().health;
+
+        if (health == 4)
         {
             rend.sprite = health4;
         }
-        if(health == 3)
+        if (health == 3)
         {
             rend.sprite = health3;
         }
-        if(health == 2)
+        if (health == 2)
         {
             rend.sprite = health2;
         }
-        if(health == 1)
+        if (health == 1)
         {
             rend.sprite = health1;
         }
-        if(isdead())
-        {
-            enemyDeath ED = FindObjectOfType<enemyDeath>();
-            ED.death();
-        }
+
     }
 
-    public void adjustEnemyHealth(int dam)
-    {
-        Debug.Log("adjust works");
-        health -= dam;
-        print(health);
-    }
-    public bool isdead()
-    {
-        return health <= 0;
-    }
+
 }
