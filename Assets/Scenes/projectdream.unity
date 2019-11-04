@@ -241,6 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 675957104}
   offset: {x: 6, y: 4, z: -10}
+  isdead: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -503,6 +504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4089228f307014e9513c53a7772850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb2d: {fileID: 0}
+  cc2d: {fileID: 0}
 --- !u!1 &675957099
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +584,7 @@ MonoBehaviour:
   jumpVelocity: 15
   rc2d: {fileID: 0}
   arrowSpeed: 10
-  isRight: 0
+  isLeft: 0
 --- !u!212 &675957103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -668,6 +671,7 @@ MonoBehaviour:
   spawnPos: {fileID: 675957104}
   fireballObj: {fileID: 1644132532531363183, guid: a6c873239e47a4c45b6d5c36bfb14f00,
     type: 3}
+  isdead: 0
 --- !u!1 &822716163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1121,7 @@ GameObject:
   - component: {fileID: 1875425277}
   - component: {fileID: 1875425276}
   - component: {fileID: 1875425275}
+  - component: {fileID: 1875425274}
   m_Layer: 10
   m_Name: enemy1 (1)
   m_TagString: enemy
@@ -1124,6 +1129,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1875425274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875425273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4089228f307014e9513c53a7772850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb2d: {fileID: 0}
+  cc2d: {fileID: 0}
 --- !u!114 &1875425275
 MonoBehaviour:
   m_ObjectHideFlags: 0

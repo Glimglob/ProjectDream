@@ -26,11 +26,11 @@ public class FireballGo : MonoBehaviour
     void Update()
     {
         playerMovement PM = FindObjectOfType<playerMovement>();
-        if (PM.isRight == false)
+        if (PM.isLeft == false)
         {
             this.rb.velocity = new Vector3(speed, 0, 0);
         }
-        else if (PM.isRight == true)
+        else if (PM.isLeft == true)
         {
             this.rb.velocity = new Vector3(-speed, 0, 0);
         }

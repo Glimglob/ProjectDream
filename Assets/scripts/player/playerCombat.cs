@@ -19,15 +19,20 @@ public class playerCombat : MonoBehaviour
     //fireball
     public Transform spawnPos;
     public GameObject fireballObj;
+    //isdead
+    public bool isdead;
 
     void Start()
     {
         StartCoroutine(manaregen());
     }
-
+    private void Awake()
+    {
+        isdead = false;
+    }
     void Update()
     {
-       
+        
         //import variables
         keyCounter = PlayerHealthbar.keyCounter;
         //Health and mana clamps
@@ -37,8 +42,11 @@ public class playerCombat : MonoBehaviour
         if (playerHealth == 0)
         {
             Destroy(gameObject);
+            isdead = true;
         }
-        
+        playerMovement PM = FindObjectOfType<playerMovement>();
+
+
     }
     public void delog()
     {
@@ -46,18 +54,27 @@ public class playerCombat : MonoBehaviour
     }
     public void Manadeplete()
     {
+        playerMovement PM = FindObjectOfType<playerMovement>();
         keyCounter++;
         Debug.Log("P is pressed");
         if (keyCounter == 1 && mana >= 10)
         {
             //hitbox
             Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
-            
-            for (int i = 0; i < enemiesToDamage.Length; i++)
+            Collider2D[] leftenemy = Physics2D.OverlapBoxAll(-attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
+            if (PM.isLeft == false)
             {
-                enemiesToDamage[i].GetComponent<enemyDeath>().takeDamage(1);
+                for (int i = 0; i < enemiesToDamage.Length; i++)
+                {
+                    enemiesToDamage[i].GetComponent<enemyDeath>().takeDamage(1);
+                }
+            }else if (PM.isLeft == true)
+            {
+                for (int i = 0; i < leftenemy.Length; i++)
+                {
+                    leftenemy[i].GetComponent<enemyDeath>().takeDamage(1);
+                }
             }
-
             //mana = mana - 10;
             keyCounter--;
             Debug.Log(mana);
@@ -69,11 +86,19 @@ public class playerCombat : MonoBehaviour
     //draw hitbox
     private void OnDrawGizmosSelected()
     {
+        playerMovement PM = FindObjectOfType<playerMovement>();
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(attackPos.position, new Vector3(attackRangeX, attackRangeY, 1));
+        if(PM.isLeft == false)
+        {
+            Gizmos.DrawWireCube(attackPos.position, new Vector3(attackRangeX, attackRangeY, 1));
+        }else if (PM.isLeft == true)
+        {
+            Gizmos.DrawWireCube(-attackPos.position, new Vector3(-attackRangeX, attackRangeY, 1));
+        }
     }
     public void Specialone()
     {
+        playerMovement PM = FindObjectOfType<playerMovement>();
         if (mana >= 20)
         {
 
@@ -82,10 +107,20 @@ public class playerCombat : MonoBehaviour
             {
 
                 Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
-                for (int i = 0; i < enemiesToDamage.Length; i++)
+                Collider2D[] leftenemy = Physics2D.OverlapBoxAll(-attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
+                if (PM.isLeft == false)
                 {
-                    enemiesToDamage[i].GetComponent<enemyDeath>().takeDamage(2);
-
+                    for (int i = 0; i < enemiesToDamage.Length; i++)
+                    {
+                        enemiesToDamage[i].GetComponent<enemyDeath>().takeDamage(1);
+                    }
+                }
+                else if (PM.isLeft == true)
+                {
+                    for (int i = 0; i < leftenemy.Length; i++)
+                    {
+                        leftenemy[i].GetComponent<enemyDeath>().takeDamage(1);
+                    }
                 }
                 mana = mana - 20;
                 keyCounter--;
@@ -129,6 +164,12 @@ public class playerCombat : MonoBehaviour
 
 
     }
-
-    
+    public void takeDamage(int dam)
+    {
+        playerHealth = playerHealth - dam;
+    }
+    public void death()
+    {
+        
+    }
 }

@@ -10,7 +10,7 @@ public class playerMovement : MonoBehaviour
     public float jumpVelocity;
     public CircleCollider2D rc2d;
     public float arrowSpeed = 10;
-    public bool isRight;
+    public bool isLeft;
     //After the group has the sprite and a box collider is made, change Circlecollider2d to box collider and change every rc2d on script.
 
 
@@ -31,18 +31,18 @@ public class playerMovement : MonoBehaviour
         {
             moveX = 1;
             moveY = 0;
-            isRight = false;
+            isLeft = false;
         }
         if (Input.GetKey(KeyCode.A))
         {
             moveX = -1;
             moveY = 0;
-            isRight = true;
+            isLeft = true;
         }
         if (IsGrounded() && Input.GetKey(KeyCode.W))
         {
             rb.velocity = Vector2.up * jumpVelocity;
-            isRight = false;
+            isLeft = false;
         }
 
         Vector3 moveDir = new Vector3(moveX, moveY);
@@ -58,13 +58,13 @@ public class playerMovement : MonoBehaviour
         {
             moveX = 1;
             moveY = 0;
-            isRight = false;
+            isLeft = false;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             moveX = -1;
             moveY = 0;
-            isRight = false;
+            isLeft = false;
         }
         if (IsGrounded() && Input.GetKey(KeyCode.UpArrow))
         {
@@ -80,14 +80,14 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             rb.velocity = new Vector2(+arrowSpeed, rb.velocity.y);
-            isRight = false;
+            isLeft = false;
         }
         else
         {
             if (Input.GetKey(KeyCode.LeftArrow))
             {
                 rb.velocity = new Vector2(-arrowSpeed, rb.velocity.y);
-                isRight = true;
+                isLeft = true;
             }
             else
             {
