@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 662711750}
   - component: {fileID: 662711749}
   - component: {fileID: 662711754}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: enemy1
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -489,6 +489,7 @@ Transform:
   m_LocalScale: {x: 1.637, y: 1.563, z: 1}
   m_Children:
   - {fileID: 1473072083}
+  - {fileID: 1255967626}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -504,8 +505,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4089228f307014e9513c53a7772850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2d: {fileID: 0}
-  cc2d: {fileID: 0}
+  hitBox: {fileID: 1255967626}
+  RangeX: 3.1
+  RangeY: 1.86
+  player:
+    serializedVersion: 2
+    m_Bits: 512
+  enemy: {fileID: 662711748}
+  keyCounter: 0
+  mana: 0
 --- !u!1 &675957099
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +528,7 @@ GameObject:
   - component: {fileID: 675957101}
   - component: {fileID: 675957105}
   - component: {fileID: 675957100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -887,6 +895,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1255967625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1255967626}
+  m_Layer: 10
+  m_Name: hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1255967626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255967625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 662711753}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &1473072083 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 529233149629144466, guid: e14540029607d8e4a9cebe2350606ed2,
@@ -1108,6 +1146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   combat: {fileID: 675957105}
+  EHB: {fileID: 0}
 --- !u!1 &1875425273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,7 +1161,7 @@ GameObject:
   - component: {fileID: 1875425276}
   - component: {fileID: 1875425275}
   - component: {fileID: 1875425274}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: enemy1 (1)
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -1141,8 +1180,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d4089228f307014e9513c53a7772850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2d: {fileID: 0}
-  cc2d: {fileID: 0}
+  hitBox: {fileID: 1983747104}
+  RangeX: 2.97
+  RangeY: 2.12
+  player:
+    serializedVersion: 2
+    m_Bits: 512
+  enemy: {fileID: 1875425273}
+  keyCounter: 0
+  mana: 0
 --- !u!114 &1875425275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1156,7 +1202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  enemy: {fileID: 0}
+  enemy: {fileID: 1875425273}
 --- !u!58 &1875425276
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1231,6 +1277,7 @@ Transform:
   m_LocalScale: {x: 1.637, y: 1.563, z: 1}
   m_Children:
   - {fileID: 1665828914}
+  - {fileID: 1983747104}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1314,6 +1361,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1 &1983747103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983747104}
+  m_Layer: 0
+  m_Name: hitbox2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1983747104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983747103}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1875425279}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2057943249
 PrefabInstance:
   m_ObjectHideFlags: 0

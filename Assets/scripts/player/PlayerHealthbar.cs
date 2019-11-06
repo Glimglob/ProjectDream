@@ -8,6 +8,7 @@ public class PlayerHealthbar : MonoBehaviour
     public static int mana;
     public static int keyCounter;
     public playerCombat combat;
+    public EnemyHitBox EHB;
     void Start()
     {
         combat.delog();
@@ -35,7 +36,7 @@ public class PlayerHealthbar : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
 
-            combat.Manadeplete();
+            EHB.attackone();
 
         }
         
@@ -46,7 +47,7 @@ public class PlayerHealthbar : MonoBehaviour
         // Special skills
         if (Input.GetKeyDown(KeyCode.X))
         {
-            combat.Specialone();
+            EHB.specialone();
         }
 
         if (Input.GetKeyDown(KeyCode.J))

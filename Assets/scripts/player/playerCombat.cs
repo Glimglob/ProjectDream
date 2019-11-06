@@ -54,28 +54,14 @@ public class playerCombat : MonoBehaviour
     }
     public void Manadeplete()
     {
-        playerMovement PM = FindObjectOfType<playerMovement>();
+        
         keyCounter++;
         Debug.Log("P is pressed");
         if (keyCounter == 1 && mana >= 10)
         {
-            //hitbox
-            Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
-            Collider2D[] leftenemy = Physics2D.OverlapBoxAll(-attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
-            if (PM.isLeft == false)
-            {
-                for (int i = 0; i < enemiesToDamage.Length; i++)
-                {
-                    enemiesToDamage[i].GetComponent<enemyDeath>().takeDamage(1);
-                }
-            }else if (PM.isLeft == true)
-            {
-                for (int i = 0; i < leftenemy.Length; i++)
-                {
-                    leftenemy[i].GetComponent<enemyDeath>().takeDamage(1);
-                }
-            }
-            //mana = mana - 10;
+            EnemyHitBox HB = FindObjectOfType<EnemyHitBox>();
+            HB.attackone();
+
             keyCounter--;
             Debug.Log(mana);
 
@@ -83,19 +69,7 @@ public class playerCombat : MonoBehaviour
         }
 
     }
-    //draw hitbox
-    private void OnDrawGizmosSelected()
-    {
-        playerMovement PM = FindObjectOfType<playerMovement>();
-        Gizmos.color = Color.red;
-        if(PM.isLeft == false)
-        {
-            Gizmos.DrawWireCube(attackPos.position, new Vector3(attackRangeX, attackRangeY, 1));
-        }else if (PM.isLeft == true)
-        {
-            Gizmos.DrawWireCube(-attackPos.position, new Vector3(-attackRangeX, attackRangeY, 1));
-        }
-    }
+ 
     public void Specialone()
     {
         playerMovement PM = FindObjectOfType<playerMovement>();
@@ -105,23 +79,10 @@ public class playerCombat : MonoBehaviour
             keyCounter++;
             if (keyCounter == 1)
             {
+                EnemyHitBox HB = FindObjectOfType<EnemyHitBox>();
+                HB.specialone();
 
-                Collider2D[] enemiesToDamage = Physics2D.OverlapBoxAll(attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
-                Collider2D[] leftenemy = Physics2D.OverlapBoxAll(-attackPos.position, new Vector2(attackRangeX, attackRangeY), 0, enemy);
-                if (PM.isLeft == false)
-                {
-                    for (int i = 0; i < enemiesToDamage.Length; i++)
-                    {
-                        enemiesToDamage[i].GetComponent<enemyDeath>().takeDamage(1);
-                    }
-                }
-                else if (PM.isLeft == true)
-                {
-                    for (int i = 0; i < leftenemy.Length; i++)
-                    {
-                        leftenemy[i].GetComponent<enemyDeath>().takeDamage(1);
-                    }
-                }
+
                 mana = mana - 20;
                 keyCounter--;
                 Debug.Log(mana);
