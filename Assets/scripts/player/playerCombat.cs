@@ -32,7 +32,7 @@ public class playerCombat : MonoBehaviour
     }
     void Update()
     {
-        
+
         //import variables
         keyCounter = PlayerHealthbar.keyCounter;
         //Health and mana clamps
@@ -54,13 +54,12 @@ public class playerCombat : MonoBehaviour
     }
     public void Manadeplete()
     {
-        
+
         keyCounter++;
         Debug.Log("P is pressed");
         if (keyCounter == 1 && mana >= 10)
         {
-            EnemyHitBox HB = FindObjectOfType<EnemyHitBox>();
-            HB.attackone();
+
 
             keyCounter--;
             Debug.Log(mana);
@@ -69,7 +68,7 @@ public class playerCombat : MonoBehaviour
         }
 
     }
- 
+
     public void Specialone()
     {
         playerMovement PM = FindObjectOfType<playerMovement>();
@@ -129,8 +128,37 @@ public class playerCombat : MonoBehaviour
     {
         playerHealth = playerHealth - dam;
     }
-    public void death()
+    public void OnTriggerStay2D(Collider2D collision)
     {
+        if (collision.tag == "hitbox")
+        {
+            
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                keyCounter++;
+                    if (keyCounter == 1) {
+                     collision.GetComponentInParent<enemyDeath>().takeDamage(1);
+                    }
+                keyCounter--;
+            }
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                keyCounter++;
+                if (keyCounter == 1 && mana >= 60) 
+                {
+                    collision.GetComponentInParent<enemyDeath>().takeDamage(3);
+                }
+                keyCounter--;
+            }
+        }
         
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "enemy")
+        {
+            takeDamage(10);
+        }
+    }
 }
+
