@@ -41,7 +41,7 @@ public class FireballGo : MonoBehaviour
         
         if (collision.tag == "enemy")
         {
-            collision.GetComponent<enemyDeath>().takeDamage(4);
+            collision.GetComponent<enemyDeath>().takeDamage(4,300,300);
             Destroy(gameObject);
         }
     }

@@ -11,6 +11,7 @@ public class playerMovement : MonoBehaviour
     public CircleCollider2D rc2d;
     public float arrowSpeed = 10;
     public bool isLeft;
+    public bool isGrounded;
     //After the group has the sprite and a box collider is made, change Circlecollider2d to box collider and change every rc2d on script.
 
 
@@ -99,7 +100,18 @@ public class playerMovement : MonoBehaviour
     
     private bool IsGrounded()
     {
+
         RaycastHit2D rch2d = Physics2D.BoxCast(rc2d.bounds.center, rc2d.bounds.size, 0, Vector2.down, 1, pllayerMask);
+    if(rch2d == false)
+        {
+            isGrounded = false;
+        }else if (rch2d == true)
+        {
+            isGrounded = true;
+        }
+
+
+       
         return rch2d;
     }
 }

@@ -17,14 +17,9 @@ public class cameraFollow : MonoBehaviour
     void Update()
     {
         playerCombat PC = FindObjectOfType<playerCombat>();
-        if (PC.isdead == false)
-        {
-            transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, player.position.z + offset.z);
-        }
-        else  
-        {
-            Debug.Log("dead");
-        }
+        transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, player.position.z + offset.z);
+
+       
 
     }
 }

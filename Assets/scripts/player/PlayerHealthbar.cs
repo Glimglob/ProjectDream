@@ -8,7 +8,6 @@ public class PlayerHealthbar : MonoBehaviour
     public static int mana;
     public static int keyCounter;
     public playerCombat combat;
-    public EnemyHitBox EHB;
     void Start()
     {
         combat.delog();

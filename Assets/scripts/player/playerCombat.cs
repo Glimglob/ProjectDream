@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playerCombat : MonoBehaviour
 {
+    public Rigidbody2D rb2d;
     //Variables
     public static int playerHealth = 100;
     public static int mana = 100;
@@ -20,19 +21,37 @@ public class playerCombat : MonoBehaviour
     public Transform spawnPos;
     public GameObject fireballObj;
     //isdead
-    public bool isdead;
+    //knockback
+    public float knockbackY;
+    public float knockbackX;
+    public bool isLeft;
+    public bool isKnockedBack;
+    public bool isGrounded;
 
     void Start()
     {
+        
         StartCoroutine(manaregen());
+        rb2d = GetComponent<Rigidbody2D>();
+
+
     }
-    private void Awake()
+    void checkKnockback()
     {
-        isdead = false;
+        isKnockedBack = false;
+        playerMovement PM = FindObjectOfType<playerMovement>();
+        isGrounded = PM.isGrounded;
+        if(isGrounded == false)
+        {
+            isKnockedBack = true;
+        }
+        
+
+ 
     }
     void Update()
     {
-
+        checkKnockback();
         //import variables
         keyCounter = PlayerHealthbar.keyCounter;
         //Health and mana clamps
@@ -42,9 +61,9 @@ public class playerCombat : MonoBehaviour
         if (playerHealth == 0)
         {
             Destroy(gameObject);
-            isdead = true;
+
         }
-        playerMovement PM = FindObjectOfType<playerMovement>();
+        
 
 
     }
@@ -52,43 +71,9 @@ public class playerCombat : MonoBehaviour
     {
         Debug.Log("This is working");
     }
-    public void Manadeplete()
-    {
+    
 
-        keyCounter++;
-        Debug.Log("P is pressed");
-        if (keyCounter == 1 && mana >= 10)
-        {
-
-
-            keyCounter--;
-            Debug.Log(mana);
-
-
-        }
-
-    }
-
-    public void Specialone()
-    {
-        playerMovement PM = FindObjectOfType<playerMovement>();
-        if (mana >= 20)
-        {
-
-            keyCounter++;
-            if (keyCounter == 1)
-            {
-                EnemyHitBox HB = FindObjectOfType<EnemyHitBox>();
-                HB.specialone();
-
-
-                mana = mana - 20;
-                keyCounter--;
-                Debug.Log(mana);
-                Debug.Log(keyCounter);
-            }
-        }
-    }
+    
     public void fireball()
     {
         if (mana >= 60)
@@ -127,6 +112,7 @@ public class playerCombat : MonoBehaviour
     public void takeDamage(int dam)
     {
         playerHealth = playerHealth - dam;
+        
     }
     public void OnTriggerStay2D(Collider2D collision)
     {
@@ -137,7 +123,7 @@ public class playerCombat : MonoBehaviour
             {
                 keyCounter++;
                     if (keyCounter == 1) {
-                     collision.GetComponentInParent<enemyDeath>().takeDamage(1);
+                     collision.GetComponentInParent<enemyDeath>().takeDamage(1,200,200);
                     }
                 keyCounter--;
             }
@@ -146,7 +132,7 @@ public class playerCombat : MonoBehaviour
                 keyCounter++;
                 if (keyCounter == 1 && mana >= 60) 
                 {
-                    collision.GetComponentInParent<enemyDeath>().takeDamage(3);
+                    collision.GetComponentInParent<enemyDeath>().takeDamage(3,100,100);
                 }
                 keyCounter--;
             }
@@ -155,8 +141,23 @@ public class playerCombat : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "enemy")
+        playerMovement PM = FindObjectOfType<playerMovement>();
+        isLeft = PM.isLeft;
+        if (collision.tag == "enemy" && isKnockedBack == false)
         {
+            
+            if (isLeft == true )
+            {
+                Debug.Log("isleft");
+                rb2d.AddForce(transform.right * -(knockbackX));
+            }
+            else if (isLeft == false)
+            {
+                Debug.Log("isRight");
+                rb2d.AddForce(transform.right * knockbackX);
+            }
+            rb2d.AddForce(transform.up * knockbackY);
+
             takeDamage(10);
         }
     }

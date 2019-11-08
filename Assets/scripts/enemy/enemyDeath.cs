@@ -6,13 +6,19 @@ public class enemyDeath : MonoBehaviour
 {
     public int health = 5;
     public GameObject enemy;
+    public Rigidbody2D rb2d;
+    public float knockbackX ;
+    public float knockbackY;
     // Start is called before the first frame update
     void Start()
     {
         GameObject enemy = gameObject;
+        rb2d = GetComponent<Rigidbody2D>();
     }
-    public void takeDamage(int dam)
+    public void takeDamage(int dam, int forceX, int forceY)
     {
+        rb2d.AddForce(transform.right * forceX);
+        rb2d.AddForce(transform.up * forceY);
         health -= dam;
         print("damage taken" + dam);
         print(health);
