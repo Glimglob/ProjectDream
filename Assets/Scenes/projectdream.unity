@@ -610,7 +610,7 @@ MonoBehaviour:
   spawnPos: {fileID: 675957104}
   fireballObj: {fileID: 1644132532531363183, guid: a6c873239e47a4c45b6d5c36bfb14f00,
     type: 3}
-  knockbackY: 300
+  knockbackY: 150.32
   knockbackX: 4700
   isLeft: 1
   isKnockedBack: 0
@@ -1314,7 +1314,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1878037330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1658,7 +1658,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1965937718
 BoxCollider2D:
   m_ObjectHideFlags: 0

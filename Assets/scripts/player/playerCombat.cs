@@ -130,9 +130,10 @@ public class playerCombat : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.X))
             {
                 keyCounter++;
-                if (keyCounter == 1 && mana >= 60) 
+                if (keyCounter == 1 && mana >= 30) 
                 {
                     collision.GetComponentInParent<enemyDeath>().takeDamage(3,100,100);
+                    mana = mana - 30;
                 }
                 keyCounter--;
             }
