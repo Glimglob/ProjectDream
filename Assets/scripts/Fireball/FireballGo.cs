@@ -38,10 +38,17 @@ public class FireballGo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        playerMovement PM = FindObjectOfType<playerMovement>();
         if (collision.tag == "enemy")
         {
-            collision.GetComponent<enemyDeath>().takeDamage(4,300,300);
+            if (PM.isLeft == false)
+            {
+                collision.GetComponent<enemyDeath>().takeDamage(4, 300, 300);
+            }
+            if (PM.isLeft == true)
+            {
+                collision.GetComponent<enemyDeath>().takeDamage(4, -300, 300);
+            }
             Destroy(gameObject);
         }
     }

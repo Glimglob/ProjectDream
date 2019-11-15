@@ -118,12 +118,18 @@ public class playerCombat : MonoBehaviour
     {
         if (collision.tag == "hitbox")
         {
-            
+            playerMovement PM = FindObjectOfType<playerMovement>();
             if (Input.GetKeyDown(KeyCode.P))
             {
                 keyCounter++;
                     if (keyCounter == 1) {
-                     collision.GetComponentInParent<enemyDeath>().takeDamage(1,200,200);
+                    if (PM.isLeft == false)
+                    {
+                        collision.GetComponentInParent<enemyDeath>().takeDamage(1, 200, 200);
+                    }else if (PM.isLeft == true)
+                    {
+                        collision.GetComponentInParent<enemyDeath>().takeDamage(1, -200, 200);
+                    }
                     }
                 keyCounter--;
             }
@@ -132,7 +138,14 @@ public class playerCombat : MonoBehaviour
                 keyCounter++;
                 if (keyCounter == 1 && mana >= 30) 
                 {
-                    collision.GetComponentInParent<enemyDeath>().takeDamage(3,100,100);
+                    if (PM.isLeft == false)
+                    {
+                        collision.GetComponentInParent<enemyDeath>().takeDamage(3, 200, 200);
+                    }
+                    else if (PM.isLeft == true)
+                    {
+                        collision.GetComponentInParent<enemyDeath>().takeDamage(3, -200, 200);
+                    }
                     mana = mana - 30;
                 }
                 keyCounter--;
@@ -146,18 +159,18 @@ public class playerCombat : MonoBehaviour
         isLeft = PM.isLeft;
         if (collision.tag == "enemy" && isKnockedBack == false)
         {
-            
+            rb2d.AddForce(transform.up * knockbackY);
             if (isLeft == true )
             {
                 Debug.Log("isleft");
-                rb2d.AddForce(transform.right * -(knockbackX));
+                rb2d.AddForce(-transform.right * knockbackX);
             }
             else if (isLeft == false)
             {
                 Debug.Log("isRight");
                 rb2d.AddForce(transform.right * knockbackX);
             }
-            rb2d.AddForce(transform.up * knockbackY);
+            
 
             takeDamage(10);
         }

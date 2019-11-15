@@ -610,7 +610,7 @@ MonoBehaviour:
   spawnPos: {fileID: 675957104}
   fireballObj: {fileID: 1644132532531363183, guid: a6c873239e47a4c45b6d5c36bfb14f00,
     type: 3}
-  knockbackY: 150.32
+  knockbackY: 450
   knockbackX: 4700
   isLeft: 1
   isKnockedBack: 0
@@ -1328,7 +1328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 2
+  speed: 3
   followDistanceStop: 1
 --- !u!114 &1878037331
 MonoBehaviour:
@@ -1636,7 +1636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 2
+  speed: 3
   followDistanceStop: 1
 --- !u!50 &1965937717
 Rigidbody2D:
