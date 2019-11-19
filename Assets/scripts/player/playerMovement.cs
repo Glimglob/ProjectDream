@@ -12,6 +12,7 @@ public class playerMovement : MonoBehaviour
     public float arrowSpeed = 10;
     public bool isLeft;
     public bool isGrounded;
+    public Animator animator;
     //After the group has the sprite and a box collider is made, change Circlecollider2d to box collider and change every rc2d on script.
 
 
@@ -27,6 +28,7 @@ public class playerMovement : MonoBehaviour
     {
         float moveX = 0;
         float moveY = 0;
+
         //Letter Movements
         if (Input.GetKey(KeyCode.D))
         {
@@ -73,6 +75,14 @@ public class playerMovement : MonoBehaviour
             
         }
         HandleMovement();
+        animator.SetFloat("speed", Mathf.Abs(moveX));
+        if(moveX <= -1)
+        {
+            animator.SetBool("left", true);
+        }else if (moveX >= 1)
+        {
+            animator.SetBool("left", false);
+        }
     }
     private void HandleMovement()
     {
