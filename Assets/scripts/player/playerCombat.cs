@@ -157,18 +157,22 @@ public class playerCombat : MonoBehaviour
     {
         playerMovement PM = FindObjectOfType<playerMovement>();
         isLeft = PM.isLeft;
+        if(isLeft == true)
+        {
+            Debug.Log("isleft");
+        }
         if (collision.tag == "enemy" && isKnockedBack == false)
         {
             rb2d.AddForce(transform.up * knockbackY);
             if (isLeft == true )
             {
-                Debug.Log("isleft");
-                rb2d.AddForce(-transform.right * knockbackX);
+                
+                rb2d.AddForce(transform.right * (knockbackX));
             }
             else if (isLeft == false)
             {
                 Debug.Log("isRight");
-                rb2d.AddForce(transform.right * knockbackX);
+                rb2d.AddForce(transform.right * -(knockbackX));
             }
             
 
