@@ -136,19 +136,26 @@ public class playerCombat : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.X))
             {
                 keyCounter++;
-                if (keyCounter == 1 && mana >= 30) 
+                if (keyCounter == 1) 
                 {
-                    if (PM.isLeft == false)
+                    keyCounter--;
+                    if (mana >= 30)
                     {
-                        collision.GetComponentInParent<enemyDeath>().takeDamage(3, 200, 200);
+                        if (PM.isLeft == false)
+                        {
+                            collision.GetComponentInParent<enemyDeath>().takeDamage(3, 200, 200);
+                        }
+                        else if (PM.isLeft == true)
+                        {
+                            collision.GetComponentInParent<enemyDeath>().takeDamage(3, -200, 200);
+                        }
+
+                        mana = mana - 30;
+                        Debug.Log(mana);
                     }
-                    else if (PM.isLeft == true)
-                    {
-                        collision.GetComponentInParent<enemyDeath>().takeDamage(3, -200, 200);
-                    }
-                    mana = mana - 30;
+                    
                 }
-                keyCounter--;
+                
             }
         }
         
