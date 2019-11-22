@@ -15,6 +15,7 @@ public class PlayerHealthbar : MonoBehaviour
     }
     public void FixedUpdate()
     {
+        transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, 0));
         mana = playerCombat.mana;
         playerHealth = playerCombat.playerHealth;
         // bar transform
