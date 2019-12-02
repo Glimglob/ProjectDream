@@ -1,0 +1,1156 @@
+fileFormatVersion: 2
+guid: aa15712e40bd35c47963aaadbdb6aee5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8632270120306776569
+    second: Area 2 platform 4_0
+  - first:
+      213: 6094319906033554928
+    second: Area 2 platform 4_1
+  - first:
+      213: 25123193849767219
+    second: Area 2 platform 4_2
+  - first:
+      213: -2231011570365894977
+    second: Area 2 platform 4_3
+  - first:
+      213: -8785867952545484782
+    second: Area 2 platform 4_4
+  - first:
+      213: -4492830223013127256
+    second: Area 2 platform 4_5
+  - first:
+      213: -8363349772697510041
+    second: Area 2 platform 4_6
+  - first:
+      213: -8881198316055514798
+    second: Area 2 platform 4_7
+  - first:
+      213: 9183113309233458351
+    second: Area 2 platform 4_8
+  - first:
+      213: -7155080177113661086
+    second: Area 2 platform 4_9
+  - first:
+      213: -2767814112658098746
+    second: Area 2 platform 4_10
+  - first:
+      213: -2510009539557951380
+    second: Area 2 platform 4_11
+  - first:
+      213: -4661287474495283833
+    second: Area 2 platform 4_12
+  - first:
+      213: 9047028632572560611
+    second: Area 2 platform 4_13
+  - first:
+      213: 3265871265853936985
+    second: Area 2 platform 4_14
+  - first:
+      213: -2722330413407430301
+    second: Area 2 platform 4_15
+  - first:
+      213: -4471127472643985125
+    second: Area 2 platform 4_16
+  - first:
+      213: -8142629557113449023
+    second: Area 2 platform 4_17
+  - first:
+      213: 8022838487937170432
+    second: Area 2 platform 4_18
+  - first:
+      213: 1698408375417657431
+    second: Area 2 platform 4_19
+  - first:
+      213: -1064445776661415108
+    second: Area 2 platform 4_20
+  - first:
+      213: -7349245024046527828
+    second: Area 2 platform 4_21
+  - first:
+      213: -7355986575187736189
+    second: Area 2 platform 4_22
+  - first:
+      213: 7650366476179768366
+    second: Area 2 platform 4_23
+  - first:
+      213: -8827390394759020783
+    second: Area 2 platform 4_24
+  - first:
+      213: 1924877198156562782
+    second: Area 2 platform 4_25
+  - first:
+      213: -2699806802170511855
+    second: Area 2 platform 4_26
+  - first:
+      213: 2499932501477259964
+    second: Area 2 platform 4_27
+  - first:
+      213: -8057413292769008995
+    second: Area 2 platform 4_28
+  - first:
+      213: -4702010006420433657
+    second: Area 2 platform 4_29
+  - first:
+      213: -3454660600098505270
+    second: Area 2 platform 4_30
+  - first:
+      213: 2358582608931481323
+    second: Area 2 platform 4_31
+  - first:
+      213: -5384481708685328502
+    second: Area 2 platform 4_32
+  - first:
+      213: -4584787129747237427
+    second: Area 2 platform 4_33
+  - first:
+      213: -2041531831990490905
+    second: Area 2 platform 4_34
+  - first:
+      213: 2679902505153862771
+    second: Area 2 platform 4_35
+  - first:
+      213: -1188928672294315511
+    second: Area 2 platform 4_36
+  - first:
+      213: 9194423219713165510
+    second: Area 2 platform 4_37
+  - first:
+      213: 2713030461518684709
+    second: Area 2 platform 4_38
+  - first:
+      213: 7121801198523975291
+    second: Area 2 platform 4_39
+  - first:
+      213: 2172605929847782208
+    second: Area 2 platform 4_40
+  - first:
+      213: -1053475619286751629
+    second: Area 2 platform 4_41
+  - first:
+      213: 2052233776296128507
+    second: Area 2 platform 4_42
+  - first:
+      213: -838167122823197518
+    second: Area 2 platform 4_43
+  - first:
+      213: 1183499513541205283
+    second: Area 2 platform 4_44
+  - first:
+      213: -1020736732892723557
+    second: Area 2 platform 4_45
+  - first:
+      213: -253618906481101538
+    second: Area 2 platform 4_46
+  - first:
+      213: 1536900663843970513
+    second: Area 2 platform 4_47
+  - first:
+      213: -2056733212182493151
+    second: Area 2 platform 4_48
+  - first:
+      213: -2035847053087624892
+    second: Area 2 platform 4_49
+  - first:
+      213: -317976091721564833
+    second: Area 2 platform 4_50
+  - first:
+      213: -3881289359060872062
+    second: Area 2 platform 4_51
+  - first:
+      213: 3451863320382500843
+    second: Area 2 platform 4_52
+  - first:
+      213: 295481992880470853
+    second: Area 2 platform 4_53
+  - first:
+      213: 7819575186040913058
+    second: Area 2 platform 4_54
+  - first:
+      213: -296891395357872300
+    second: Area 2 platform 4_55
+  - first:
+      213: 3849904064060304239
+    second: Area 2 platform 4_56
+  - first:
+      213: 3780793127955015948
+    second: Area 2 platform 4_57
+  - first:
+      213: 1949087623207203800
+    second: Area 2 platform 4_58
+  - first:
+      213: 6606006780683143206
+    second: Area 2 platform 4_59
+  - first:
+      213: -4268876145881048339
+    second: Area 2 platform 4_60
+  - first:
+      213: -3816230790051617995
+    second: Area 2 platform 4_61
+  - first:
+      213: 2478796741974305923
+    second: Area 2 platform 4_62
+  - first:
+      213: -984323742066374913
+    second: Area 2 platform 4_63
+  - first:
+      213: -7199820857540730442
+    second: Area 2 platform 4_64
+  - first:
+      213: 8730597626192948524
+    second: Area 2 platform 4_65
+  - first:
+      213: 4021267241050800682
+    second: Area 2 platform 4_66
+  - first:
+      213: 8062512948073792835
+    second: Area 2 platform 4_67
+  - first:
+      213: -7434090144559836279
+    second: Area 2 platform 4_68
+  - first:
+      213: -8537967107707699598
+    second: Area 2 platform 4_69
+  - first:
+      213: 7229689120465950530
+    second: Area 2 platform 4_70
+  - first:
+      213: 5691326049043471456
+    second: Area 2 platform 4_71
+  - first:
+      213: 1095336955343369669
+    second: Area 2 platform 4_72
+  - first:
+      213: -6333206459388123647
+    second: Area 2 platform 4_73
+  - first:
+      213: 2601602732031010879
+    second: Area 2 platform 4_74
+  - first:
+      213: -4613770408662187569
+    second: Area 2 platform 4_75
+  - first:
+      213: 3280689284196535410
+    second: Area 2 platform 4_76
+  - first:
+      213: -108451308560962892
+    second: Area 2 platform 4_77
+  - first:
+      213: -7472964179379702942
+    second: Area 2 platform 4_78
+  - first:
+      213: -2549683226032236576
+    second: Area 2 platform 4_79
+  - first:
+      213: 3820703496979723850
+    second: Area 2 platform 4_80
+  - first:
+      213: -6142713992755830359
+    second: Area 2 platform 4_81
+  - first:
+      213: -5475791853686443933
+    second: Area 2 platform 4_82
+  - first:
+      213: 8010477014921244052
+    second: Area 2 platform 4_83
+  - first:
+      213: -6447917708415707108
+    second: Area 2 platform 4_84
+  - first:
+      213: 7538075213816798434
+    second: Area 2 platform 4_85
+  - first:
+      213: 3411633201163415186
+    second: Area 2 platform 4_86
+  - first:
+      213: 600551141204192166
+    second: Area 2 platform 4_87
+  - first:
+      213: 3911026471033244105
+    second: Area 2 platform 4_88
+  - first:
+      213: -1784159277633516749
+    second: Area 2 platform 4_89
+  - first:
+      213: -7603353568613577538
+    second: Area 2 platform 4_90
+  - first:
+      213: 1674816148556842603
+    second: Area 2 platform 4_91
+  - first:
+      213: 4511826809554583176
+    second: Area 2 platform 4_92
+  - first:
+      213: -6388306535856521742
+    second: Area 2 platform 4_93
+  - first:
+      213: 7660992111832546146
+    second: Area 2 platform 4_94
+  - first:
+      213: 6231688539528440693
+    second: Area 2 platform 4_95
+  - first:
+      213: -5994823024116393685
+    second: Area 2 platform 4_96
+  - first:
+      213: 270741244972249568
+    second: Area 2 platform 4_97
+  - first:
+      213: -9122259634708932527
+    second: Area 2 platform 4_98
+  - first:
+      213: -7782022056858864831
+    second: Area 2 platform 4_99
+  - first:
+      213: 5277509801712157253
+    second: Area 2 platform 4_100
+  - first:
+      213: -6497191464992918636
+    second: Area 2 platform 4_101
+  - first:
+      213: 8259304828932515779
+    second: Area 2 platform 4_102
+  - first:
+      213: -8013041755704633480
+    second: Area 2 platform 4_103
+  - first:
+      213: -5738261264696532093
+    second: Area 2 platform 4_104
+  - first:
+      213: -4580943870701480470
+    second: Area 2 platform 4_105
+  - first:
+      213: -1823122803600969296
+    second: Area 2 platform 4_106
+  - first:
+      213: -2211725985580364050
+    second: Area 2 platform 4_107
+  - first:
+      213: 3639244620106018553
+    second: Area 2 platform 4_108
+  - first:
+      213: 4016334570371223874
+    second: Area 2 platform 4_109
+  - first:
+      213: 2308166849053701855
+    second: Area 2 platform 4_110
+  - first:
+      213: -4542404018845110631
+    second: Area 2 platform 4_111
+  - first:
+      213: -2580179295035206470
+    second: Area 2 platform 4_112
+  - first:
+      213: -8464573895501873395
+    second: Area 2 platform 4_113
+  - first:
+      213: 148004164572128710
+    second: Area 2 platform 4_114
+  - first:
+      213: -6474805306820135884
+    second: Area 2 platform 4_115
+  - first:
+      213: 4755561193480118638
+    second: Area 2 platform 4_116
+  - first:
+      213: 2138762288305265358
+    second: Area 2 platform 4_117
+  - first:
+      213: 7604687056718861584
+    second: Area 2 platform 4_118
+  - first:
+      213: 3022443596781086827
+    second: Area 2 platform 4_119
+  - first:
+      213: -7997734164819490817
+    second: Area 2 platform 4_120
+  - first:
+      213: -9031635602695863970
+    second: Area 2 platform 4_121
+  - first:
+      213: -241932588205007476
+    second: Area 2 platform 4_122
+  - first:
+      213: 1271107759128887265
+    second: Area 2 platform 4_123
+  - first:
+      213: -1209695961458683993
+    second: Area 2 platform 4_124
+  - first:
+      213: -1938987820149718881
+    second: Area 2 platform 4_125
+  - first:
+      213: 3776337716927585892
+    second: Area 2 platform 4_126
+  - first:
+      213: -6225558039204127136
+    second: Area 2 platform 4_127
+  - first:
+      213: 8947565068638522435
+    second: Area 2 platform 4_128
+  - first:
+      213: -6041138264774246000
+    second: Area 2 platform 4_129
+  - first:
+      213: -7265537867136996181
+    second: Area 2 platform 4_130
+  - first:
+      213: -1929455856559402059
+    second: Area 2 platform 4_131
+  - first:
+      213: 5205923297039435158
+    second: Area 2 platform 4_132
+  - first:
+      213: -5034757933159502256
+    second: Area 2 platform 4_133
+  - first:
+      213: 8615949829807368329
+    second: Area 2 platform 4_134
+  - first:
+      213: 8266761480761698053
+    second: Area 2 platform 4_135
+  - first:
+      213: -3904150714339850599
+    second: Area 2 platform 4_136
+  - first:
+      213: -6423419266363145431
+    second: Area 2 platform 4_137
+  - first:
+      213: 7359101062909326026
+    second: Area 2 platform 4_138
+  - first:
+      213: 669241174060099288
+    second: Area 2 platform 4_139
+  - first:
+      213: 7315828631140707452
+    second: Area 2 platform 4_140
+  - first:
+      213: -2757845485605296726
+    second: Area 2 platform 4_141
+  - first:
+      213: -5733590561959163392
+    second: Area 2 platform 4_142
+  - first:
+      213: 6528185907884127880
+    second: Area 2 platform 4_143
+  - first:
+      213: 6485016900430288714
+    second: Area 2 platform 4_144
+  - first:
+      213: 1715468622941178946
+    second: Area 2 platform 4_145
+  - first:
+      213: 4860531873754079624
+    second: Area 2 platform 4_146
+  - first:
+      213: -8878084255097637882
+    second: Area 2 platform 4_147
+  - first:
+      213: 8357585332578253813
+    second: Area 2 platform 4_148
+  - first:
+      213: 5958554238236151875
+    second: Area 2 platform 4_149
+  - first:
+      213: -3426505854425258395
+    second: Area 2 platform 4_150
+  - first:
+      213: -3598728991214714010
+    second: Area 2 platform 4_151
+  - first:
+      213: -5207525475473709669
+    second: Area 2 platform 4_152
+  - first:
+      213: 9136890728979535492
+    second: Area 2 platform 4_153
+  - first:
+      213: -2368843705501434263
+    second: Area 2 platform 4_154
+  - first:
+      213: -8730648109547993063
+    second: Area 2 platform 4_155
+  - first:
+      213: -119891262932479857
+    second: Area 2 platform 4_156
+  - first:
+      213: 8747783617662015701
+    second: Area 2 platform 4_157
+  - first:
+      213: -5146770249671670923
+    second: Area 2 platform 4_158
+  - first:
+      213: -5505201351152275133
+    second: Area 2 platform 4_159
+  - first:
+      213: -4793899259393611969
+    second: Area 2 platform 4_160
+  - first:
+      213: 6149915727884699346
+    second: Area 2 platform 4_161
+  - first:
+      213: -3978337695615520707
+    second: Area 2 platform 4_162
+  - first:
+      213: -930321112610742183
+    second: Area 2 platform 4_163
+  - first:
+      213: 374613320308807189
+    second: Area 2 platform 4_164
+  - first:
+      213: 7687019042455128537
+    second: Area 2 platform 4_165
+  - first:
+      213: -6581194749113585064
+    second: Area 2 platform 4_166
+  - first:
+      213: -4297418607130058554
+    second: Area 2 platform 4_167
+  - first:
+      213: -5951210130735551230
+    second: Area 2 platform 4_168
+  - first:
+      213: 4578235802081068957
+    second: Area 2 platform 4_169
+  - first:
+      213: 5719569092822975703
+    second: Area 2 platform 4_170
+  - first:
+      213: -1845016224078634826
+    second: Area 2 platform 4_171
+  - first:
+      213: 6814550843513901262
+    second: Area 2 platform 4_172
+  - first:
+      213: -1592215759091221113
+    second: Area 2 platform 4_173
+  - first:
+      213: 5606571096233083905
+    second: Area 2 platform 4_174
+  - first:
+      213: -1076288511900682375
+    second: Area 2 platform 4_175
+  - first:
+      213: -8929533259032697479
+    second: Area 2 platform 4_176
+  - first:
+      213: -3436836788318770993
+    second: Area 2 platform 4_177
+  - first:
+      213: 367381460473881524
+    second: Area 2 platform 4_178
+  - first:
+      213: -6632134062099966450
+    second: Area 2 platform 4_179
+  - first:
+      213: -2058655978859359292
+    second: Area 2 platform 4_180
+  - first:
+      213: -4172863365039244009
+    second: Area 2 platform 4_181
+  - first:
+      213: 2926907957992268648
+    second: Area 2 platform 4_182
+  - first:
+      213: -3405722991526860514
+    second: Area 2 platform 4_183
+  - first:
+      213: -8195234429102331690
+    second: Area 2 platform 4_184
+  - first:
+      213: 3174005468362403497
+    second: Area 2 platform 4_185
+  - first:
+      213: 1411958968620665968
+    second: Area 2 platform 4_186
+  - first:
+      213: 3855548204968394985
+    second: Area 2 platform 4_187
+  - first:
+      213: 2326819478537964828
+    second: Area 2 platform 4_188
+  - first:
+      213: -6175704752903510651
+    second: Area 2 platform 4_189
+  - first:
+      213: 2756743915271550251
+    second: Area 2 platform 4_190
+  - first:
+      213: 7165802362248539824
+    second: Area 2 platform 4_191
+  - first:
+      213: -5412507865932971085
+    second: Area 2 platform 4_192
+  - first:
+      213: -6392372423178034270
+    second: Area 2 platform 4_193
+  - first:
+      213: 1791792650035023831
+    second: Area 2 platform 4_194
+  - first:
+      213: 8535789422022170324
+    second: Area 2 platform 4_195
+  - first:
+      213: 5521404041224591085
+    second: Area 2 platform 4_196
+  - first:
+      213: 5937529648603853913
+    second: Area 2 platform 4_197
+  - first:
+      213: -5089834659529128084
+    second: Area 2 platform 4_198
+  - first:
+      213: -5006695154045869981
+    second: Area 2 platform 4_199
+  - first:
+      213: 422149090281777476
+    second: Area 2 platform 4_200
+  - first:
+      213: -1922999336728739490
+    second: Area 2 platform 4_201
+  - first:
+      213: 8509914570116822367
+    second: Area 2 platform 4_202
+  - first:
+      213: 1095125240373363108
+    second: Area 2 platform 4_203
+  - first:
+      213: -7242339709017766083
+    second: Area 2 platform 4_204
+  - first:
+      213: 3158618067609904599
+    second: Area 2 platform 4_205
+  - first:
+      213: -1179060355298920381
+    second: Area 2 platform 4_206
+  - first:
+      213: 1381558408487805236
+    second: Area 2 platform 4_207
+  - first:
+      213: -5901009558707606156
+    second: Area 2 platform 4_208
+  - first:
+      213: -6237833269748157816
+    second: Area 2 platform 4_209
+  - first:
+      213: -376677341521847005
+    second: Area 2 platform 4_210
+  - first:
+      213: 8618564254554938903
+    second: Area 2 platform 4_211
+  - first:
+      213: 5605980077300366188
+    second: Area 2 platform 4_212
+  - first:
+      213: 7657282455551817223
+    second: Area 2 platform 4_213
+  - first:
+      213: 5947495743433224717
+    second: Area 2 platform 4_214
+  - first:
+      213: -6147577325170006293
+    second: Area 2 platform 4_215
+  - first:
+      213: -2969777601025322985
+    second: Area 2 platform 4_216
+  - first:
+      213: -296025250781604889
+    second: Area 2 platform 4_217
+  - first:
+      213: 923042539956310233
+    second: Area 2 platform 4_218
+  - first:
+      213: -9103638061925063512
+    second: Area 2 platform 4_219
+  - first:
+      213: -1059177414718642581
+    second: Area 2 platform 4_220
+  - first:
+      213: 4327489181172320391
+    second: Area 2 platform 4_221
+  - first:
+      213: -4775284021746757424
+    second: Area 2 platform 4_222
+  - first:
+      213: 6375701043169754172
+    second: Area 2 platform 4_223
+  - first:
+      213: -6462601264320477009
+    second: Area 2 platform 4_224
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 4
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Area 2 platform 4_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218101ee620f0354d861f395459e1f1d
+      internalID: -8632270120306776569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e115ca854d532d49b03e39fcbd86493
+      internalID: 6094319906033554928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3feb61a98f89fa8498c3219df8d2e40b
+      internalID: 25123193849767219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a736eb9b5765b4445b25e07b7f55ae92
+      internalID: -2231011570365894977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2c6ff31fe55b240b7a7b34ff947eeb
+      internalID: -8785867952545484782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 36
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0fda0bd501c7142a2c2c696b4de60a
+      internalID: -4492830223013127256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7055000307bbc77418cbeb9f5c0a84eb
+      internalID: -8363349772697510041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3f05257eb47f04ba4c07e72bfbc127
+      internalID: -8881198316055514798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba534042a9efcf4bb3d8a09dd2b9a30
+      internalID: 9183113309233458351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baf97aaab51dfd4cae386f2446cf8c6
+      internalID: -7155080177113661086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_10
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384e3045d929f5446aa8a42ce3248289
+      internalID: -2767814112658098746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8bd84c848358e4fa2d47836618fdc4
+      internalID: -2510009539557951380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7aa060929290bf499853b7d58c86802
+      internalID: -4661287474495283833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c7b5e5bacb6214583ffb83bd1006e0
+      internalID: 9047028632572560611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_14
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450e3dbab4104304dacff44f5fd9035a
+      internalID: 3265871265853936985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a51c499293e95ed45b73776024e25841
+      internalID: -2722330413407430301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946005a10a37cb24b93b6c316b4d7e3f
+      internalID: -4471127472643985125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Area 2 platform 4_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 28
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6411668f00b4c0443bf16a2aba2c60de
+      internalID: -8142629557113449023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
