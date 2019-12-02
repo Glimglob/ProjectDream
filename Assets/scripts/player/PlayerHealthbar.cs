@@ -10,7 +10,7 @@ public class PlayerHealthbar : MonoBehaviour
     public playerCombat combat;
     void Start()
     {
-        combat.delog();
+
         
     }
     public void FixedUpdate()
