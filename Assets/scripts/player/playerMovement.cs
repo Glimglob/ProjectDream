@@ -69,7 +69,7 @@ public class playerMovement : MonoBehaviour
             moveY = 0;
             isLeft = false;
         }
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.UpArrow))
+        if (IsGrounded() && Input.GetKey(KeyCode.UpArrow))
         {
             rb.velocity = Vector2.up * jumpVelocity;
             
