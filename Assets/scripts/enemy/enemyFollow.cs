@@ -7,6 +7,8 @@ public class enemyFollow : MonoBehaviour
     public Transform target;
     public float speed;
     public float followDistanceStop;
+    public Animator anim;
+    public float moveX;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +18,13 @@ public class enemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Vector2.Distance(transform.position, target.position) > followDistanceStop)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            moveX = 1;
+            
         }
+        anim.SetFloat("speed", Mathf.Abs(moveX));
     }
 }
