@@ -280,6 +280,14 @@ MonoBehaviour:
   enemy: {fileID: 0}
   player: {fileID: 0}
   dist: 0
+  rb2d: {fileID: 0}
+  dir: {x: 0, y: 0}
+  playermask:
+    serializedVersion: 2
+    m_Bits: 0
+  origin: {x: 0, y: 0}
+  left: 0
+  hit: 0
 --- !u!114 &2618665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1629,9 +1637,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0061935494, y: -0.22843148}
+  m_Offset: {x: 0.024666784, y: -0.22843148}
   serializedVersion: 2
-  m_Radius: 0.27199826
+  m_Radius: 0.29047146
 --- !u!212 &1965937713
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1714,11 +1722,19 @@ MonoBehaviour:
   speed: 3
   followDistanceStop: 1
   anim: {fileID: 1965937719}
-  moveX: 0
+  moveX: 32
   relativePoint: {x: 0, y: 0}
-  enemy: {fileID: 0}
+  enemy: {fileID: 1965937715}
   player: {fileID: 675957104}
-  dist: 500
+  dist: 2
+  rb2d: {fileID: 0}
+  dir: {x: 0, y: 0}
+  playermask:
+    serializedVersion: 2
+    m_Bits: 512
+  origin: {x: 0, y: 0}
+  left: 0
+  hit: 0
 --- !u!50 &1965937717
 Rigidbody2D:
   serializedVersion: 4
