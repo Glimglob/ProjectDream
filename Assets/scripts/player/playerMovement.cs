@@ -88,7 +88,7 @@ public class playerMovement : MonoBehaviour
     {
         
         //Arrow Movements
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             rb.velocity = new Vector2(+arrowSpeed, rb.velocity.y);
             isLeft = false;
