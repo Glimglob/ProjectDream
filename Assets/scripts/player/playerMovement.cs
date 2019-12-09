@@ -48,8 +48,7 @@ public class playerMovement : MonoBehaviour
             isLeft = false;
         }
 
-        Vector3 moveDir = new Vector3(moveX, moveY);
-        transform.position += moveDir * speed * Time.deltaTime;
+       
         //Space Jump
         if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
         {
@@ -67,14 +66,19 @@ public class playerMovement : MonoBehaviour
         {
             moveX = -1;
             moveY = 0;
-            isLeft = false;
+            isLeft = true;
         }
+        else
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+            }
+        Vector3 moveDir = new Vector3(moveX, moveY);
+        transform.position += moveDir * speed * Time.deltaTime;
         if (IsGrounded() && Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.velocity = Vector2.up * jumpVelocity;
             
         }
-        HandleMovement();
         animator.SetFloat("speed", Mathf.Abs(moveX));
         if(moveX <= -1)
         {
@@ -84,29 +88,7 @@ public class playerMovement : MonoBehaviour
             animator.SetBool("left", false);
         }
     }
-    private void HandleMovement()
-    {
-        
-        //Arrow Movements
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            rb.velocity = new Vector2(+arrowSpeed, rb.velocity.y);
-            isLeft = false;
-        }
-        else
-        {
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                rb.velocity = new Vector2(-arrowSpeed, rb.velocity.y);
-                isLeft = true;
-            }
-            else
-            {
-                rb.velocity = new Vector2(0, rb.velocity.y);
-            }
-
-        }
-    }
+   
     
     private bool IsGrounded()
     {

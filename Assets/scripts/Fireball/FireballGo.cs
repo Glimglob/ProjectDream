@@ -8,6 +8,7 @@ public class FireballGo : MonoBehaviour
     public float speed;
     public Rigidbody2D rb;
     public CircleCollider2D cc2d;
+    public int lifelimit;
     
  
 
@@ -16,7 +17,7 @@ public class FireballGo : MonoBehaviour
     {
         rb = transform.GetComponent<Rigidbody2D>();
         cc2d = transform.GetComponent<CircleCollider2D>();
-        
+        StartCoroutine(lifelimitdead());
         
 
 
@@ -33,6 +34,10 @@ public class FireballGo : MonoBehaviour
         else if (PM.isLeft == true)
         {
             this.rb.velocity = new Vector3(-speed, 0, 0);
+        }
+        if(lifelimit == 5)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -51,5 +56,16 @@ public class FireballGo : MonoBehaviour
             }
             Destroy(gameObject);
         }
+    }
+    IEnumerator lifelimitdead()
+    {
+        while (true)
+        {
+            lifelimit = 0;
+            lifelimit = lifelimit + 1;
+            
+        }
+
+
     }
 }
