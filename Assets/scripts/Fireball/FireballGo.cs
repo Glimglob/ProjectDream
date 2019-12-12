@@ -35,7 +35,7 @@ public class FireballGo : MonoBehaviour
         {
             this.rb.velocity = new Vector3(-speed, 0, 0);
         }
-        if(lifelimit == 5)
+        if (lifelimit == 5)
         {
             Destroy(gameObject);
         }
@@ -61,8 +61,16 @@ public class FireballGo : MonoBehaviour
     {
         while (true)
         {
-            lifelimit = 0;
-            lifelimit = lifelimit + 1;
+            if(lifelimit < 5)
+            {
+                lifelimit = lifelimit + 1;
+                yield return new WaitForSeconds(1);
+
+            }
+            else
+            {
+                yield return null;
+            }
             
         }
 
