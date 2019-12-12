@@ -48,37 +48,11 @@ public class playerMovement : MonoBehaviour
             isLeft = false;
         }
 
-       
-        //Space Jump
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.velocity = Vector2.up * jumpVelocity;
-        }
 
-        //Arrow Movements
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            moveX = 1;
-            moveY = 0;
-            isLeft = false;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            moveX = -1;
-            moveY = 0;
-            isLeft = true;
-        }
-        else
-            {
-                rb.velocity = new Vector2(0, rb.velocity.y);
-            }
+       
         Vector3 moveDir = new Vector3(moveX, moveY);
         transform.position += moveDir * speed * Time.deltaTime;
-        if (IsGrounded() && Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            rb.velocity = Vector2.up * jumpVelocity;
-            
-        }
+        
         animator.SetFloat("speed", Mathf.Abs(moveX));
         if(moveX <= -1)
         {
