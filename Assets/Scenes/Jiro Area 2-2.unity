@@ -991,7 +991,7 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 3
   followDistanceStop: 1
-  anim: {fileID: 797318382}
+  anim: {fileID: 1404685184}
   moveX: 32
   relativePoint: {x: 0, y: 0}
   enemy: {fileID: 797318388}
@@ -4344,7 +4344,7 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 3
   followDistanceStop: 1
-  anim: {fileID: 1563043980}
+  anim: {fileID: 1404685184}
   moveX: 32
   relativePoint: {x: 0, y: 0}
   enemy: {fileID: 1563043986}

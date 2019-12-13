@@ -24,7 +24,8 @@ public class enemyFollow : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        target = GameObject.Find("player").transform;
+        //anim = find
         
         
     }
