@@ -20,9 +20,9 @@ public class PlayerHealthbar : MonoBehaviour
         playerHealth = playerCombat.playerHealth;
         // bar transform
         Transform hBar = transform.Find("hBar");
-        hBar.localScale = new Vector3(playerHealth * 4, 35f);
+        hBar.localScale = new Vector3(playerHealth * 2, 16f);
         Transform mBar = transform.Find("mBar");
-        mBar.localScale = new Vector3(mana * 4, 35f);
+        mBar.localScale = new Vector3(mana * 2, 16f);
         //Clamps
         playerHealth = Mathf.Clamp(playerHealth, 0, 100);
         mana = Mathf.Clamp(mana, 0, 100);
