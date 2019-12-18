@@ -125,10 +125,10 @@ public class playerCombat : MonoBehaviour
                     if (keyCounter == 1) {
                     if (PM.isLeft == false)
                     {
-                        collision.GetComponentInParent<enemyDeath>().takeDamage(1, 200, 200);
+                        collision.GetComponentInParent<enemyDeath>().takeDamage(1, 100, 100);
                     }else if (PM.isLeft == true)
                     {
-                        collision.GetComponentInParent<enemyDeath>().takeDamage(1, -200, 200);
+                        collision.GetComponentInParent<enemyDeath>().takeDamage(1, -100, 100);
                     }
                     }
                 keyCounter--;
