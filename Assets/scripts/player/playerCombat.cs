@@ -27,6 +27,8 @@ public class playerCombat : MonoBehaviour
     public bool isLeft;
     public bool isKnockedBack;
     public bool isGrounded;
+    //respawn
+    public Transform SpawnPoint;
 
     void Start()
     {
@@ -60,10 +62,19 @@ public class playerCombat : MonoBehaviour
         //death
         if (playerHealth == 0)
         {
-            Destroy(gameObject);
+            playerHealth = 100;
+            gameObject.transform.position = SpawnPoint.position;
 
         }
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            
+            gameObject.transform.position = SpawnPoint.position;
+            
+
+        }
+
+
 
 
     }
