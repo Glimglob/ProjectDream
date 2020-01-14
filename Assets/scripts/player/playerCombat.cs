@@ -73,7 +73,10 @@ public class playerCombat : MonoBehaviour
             
 
         }
-
+        if (Input.GetMouseButtonDown(1))
+        {
+            fireball();
+        }
 
 
 
@@ -130,27 +133,14 @@ public class playerCombat : MonoBehaviour
         if (collision.tag == "hitbox")
         {
             playerMovement PM = FindObjectOfType<playerMovement>();
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                keyCounter++;
-                    if (keyCounter == 1) {
-                    if (PM.isLeft == false)
-                    {
-                        collision.GetComponentInParent<enemyDeath>().takeDamage(1, 300, 100);
-                    }else if (PM.isLeft == true)
-                    {
-                        collision.GetComponentInParent<enemyDeath>().takeDamage(1, -300, 100);
-                    }
-                    }
-                keyCounter--;
-            }
-            if (Input.GetKeyDown(KeyCode.X))
+            
+            if (Input.GetMouseButtonDown(0))
             {
                 keyCounter++;
                 if (keyCounter == 1) 
                 {
                     keyCounter--;
-                    if (mana >= 30)
+                    if (mana >= 10)
                     {
                         if (PM.isLeft == false)
                         {
@@ -161,7 +151,7 @@ public class playerCombat : MonoBehaviour
                             collision.GetComponentInParent<enemyDeath>().takeDamage(3, -200, 200);
                         }
 
-                        mana = mana - 30;
+                        mana = mana - 10;
                         Debug.Log(mana);
                     }
                     

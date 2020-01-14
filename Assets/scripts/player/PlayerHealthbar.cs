@@ -32,10 +32,7 @@ public class PlayerHealthbar : MonoBehaviour
     public void Update()
     { 
 
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            combat.fireball();
-        }
+        
         
 
         
