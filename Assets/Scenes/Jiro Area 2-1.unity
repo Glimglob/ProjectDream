@@ -6710,6 +6710,7 @@ MonoBehaviour:
   isLeft: 1
   isKnockedBack: 0
   isGrounded: 0
+  SpawnPoint: {fileID: 0}
 --- !u!50 &905132680
 Rigidbody2D:
   serializedVersion: 4
@@ -89385,7 +89386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 905132682}
-  offset: {x: 6, y: 4, z: -10}
+  offset: {x: 1.81, y: 1.81, z: -10}
   isdead: 0
 --- !u!81 &1652158563
 AudioListener:
