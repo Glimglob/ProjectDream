@@ -63,6 +63,7 @@ public class playerCombat : MonoBehaviour
         if (playerHealth == 0)
         {
             playerHealth = 100;
+            mana = 100;
             gameObject.transform.position = SpawnPoint.position;
 
         }
@@ -90,13 +91,13 @@ public class playerCombat : MonoBehaviour
     
     public void fireball()
     {
-        if (mana >= 60)
+        if (mana >= 50)
         {
             keyCounter++;
             if (keyCounter == 1)
             {
                 GameObject fire = Instantiate(fireballObj, transform.position, Quaternion.identity) as GameObject;
-                mana -= 60;
+                mana -= 50;
                 keyCounter--;
             }
         }
@@ -112,7 +113,7 @@ public class playerCombat : MonoBehaviour
             }
             if (mana < 100)
             {
-                mana = mana + 5;
+                mana = mana + 10;
                 yield return new WaitForSeconds(1);
             }
             else
@@ -129,6 +130,7 @@ public class playerCombat : MonoBehaviour
         
     }
     public void OnTriggerStay2D(Collider2D collision)
+    { 
     {
         if (collision.tag == "hitbox")
         {
@@ -140,8 +142,6 @@ public class playerCombat : MonoBehaviour
                 if (keyCounter == 1) 
                 {
                     keyCounter--;
-                    if (mana >= 10)
-                    {
                         if (PM.isLeft == false)
                         {
                             collision.GetComponentInParent<enemyDeath>().takeDamage(3, 200, 200);
@@ -151,8 +151,8 @@ public class playerCombat : MonoBehaviour
                             collision.GetComponentInParent<enemyDeath>().takeDamage(3, -200, 200);
                         }
 
-                        mana = mana - 10;
-                        Debug.Log(mana);
+                        
+                        
                     }
                     
                 }
