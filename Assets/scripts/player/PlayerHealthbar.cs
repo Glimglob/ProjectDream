@@ -8,6 +8,7 @@ public class PlayerHealthbar : MonoBehaviour
     public static int mana;
     public static int keyCounter;
     public playerCombat combat;
+    public static float time;
     void Start()
     {
         combat.delog();
@@ -18,11 +19,14 @@ public class PlayerHealthbar : MonoBehaviour
         
         mana = playerCombat.mana;
         playerHealth = playerCombat.playerHealth;
+        time = timer.time;
         // bar transform
         Transform hBar = transform.Find("hBar");
         hBar.localScale = new Vector3(playerHealth * 2, 16f);
         Transform mBar = transform.Find("mBar");
         mBar.localScale = new Vector3(mana * 2, 16f);
+        Transform tBar = transform.Find("tBar");
+        tBar.localScale = new Vector3(time * 8, 16f);
         //Clamps
         playerHealth = Mathf.Clamp(playerHealth, 0, 100);
         mana = Mathf.Clamp(mana, 0, 100);

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour
 {
-    public float time = 30;
+    public static float time = 25;
     
     // Start is called before the first frame update
     void Start()
@@ -28,5 +28,6 @@ public class timer : MonoBehaviour
         playerCombat.playerHealth = 100;
         playerCombat.mana = 100;
         SceneManager.LoadScene("Jiro Area 2-1");
+        time = 25;
     }
 }

@@ -19,5 +19,6 @@ public class lvlthreead : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene("Jiro Area 2-3");
+        timer.time = 25;
     }
 }
