@@ -22,6 +22,7 @@ public class lvltwoadvance : MonoBehaviour
         if(collision.tag == "Player")
         {
             SceneManager.LoadScene("Jiro Area 2-2");
+            timer.time = 25;
         }
     }
 }
