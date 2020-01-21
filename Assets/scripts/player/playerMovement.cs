@@ -61,6 +61,7 @@ public class playerMovement : MonoBehaviour
         {
             animator.SetBool("left", false);
         }
+        
     }
    
     

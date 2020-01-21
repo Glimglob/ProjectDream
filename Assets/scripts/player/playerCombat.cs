@@ -29,6 +29,7 @@ public class playerCombat : MonoBehaviour
     public bool isGrounded;
     //respawn
     public Transform SpawnPoint;
+    
 
     void Start()
     {
@@ -71,12 +72,21 @@ public class playerCombat : MonoBehaviour
         {
             
             gameObject.transform.position = SpawnPoint.position;
+            rb2d.velocity = Vector3.zero;
             
 
         }
         if (Input.GetMouseButtonDown(1))
         {
             fireball();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if(mana == 100)
+            {
+                playerHealth += 33;
+                mana -= 100;
+            }
         }
 
 
