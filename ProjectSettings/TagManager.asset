@@ -6,6 +6,7 @@ TagManager:
   tags:
   - enemy
   - hitbox
+  - icesickle
   layers:
   - Default
   - TransparentFX

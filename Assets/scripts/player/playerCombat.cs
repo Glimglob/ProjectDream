@@ -10,6 +10,7 @@ public class playerCombat : MonoBehaviour
     public static int mana = 100;
     public static int keyCounter;
     public static int enemyhealth = 5;
+    public float timeDamTaken;
     //hitbox variables
     public Transform attackPos;
     public float attackRangeX;
@@ -24,6 +25,8 @@ public class playerCombat : MonoBehaviour
     //knockback
     public float knockbackY;
     public float knockbackX;
+    public float knockbackYI;
+    public float knockbackXI;
     public bool isLeft;
     public bool isKnockedBack;
     public bool isGrounded;
@@ -54,6 +57,8 @@ public class playerCombat : MonoBehaviour
     }
     void Update()
     {
+        playerMovement PM = FindObjectOfType<playerMovement>();
+        isLeft = PM.isLeft;
         checkKnockback();
         //import variables
         keyCounter = PlayerHealthbar.keyCounter;
@@ -139,6 +144,29 @@ public class playerCombat : MonoBehaviour
         playerHealth = playerHealth - dam;
         
     }
+    IEnumerator icesickledam()
+    {
+        
+        while (true)
+        {
+            if(playerHealth >= 1)
+            {
+                playerHealth = playerHealth - 1;
+                timeDamTaken += 1;
+                yield return new WaitForSeconds(1);
+                if(timeDamTaken == 5)
+                {
+                    yield return null;
+                }
+            }
+            else
+            {
+                yield return null;
+            }
+        }
+
+
+    }
     public void OnTriggerStay2D(Collider2D collision)
     { 
     {
@@ -173,8 +201,7 @@ public class playerCombat : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        playerMovement PM = FindObjectOfType<playerMovement>();
-        isLeft = PM.isLeft;
+        
         if(isLeft == true)
         {
             Debug.Log("isleft");
@@ -195,6 +222,21 @@ public class playerCombat : MonoBehaviour
             
 
             takeDamage(10);
+        }
+        if(collision.tag == "icesickle")
+        {
+            rb2d.AddForce(transform.up * knockbackYI);
+            if (isLeft == true)
+            {
+
+                rb2d.AddForce(transform.right * -(knockbackXI));
+            }
+            else if (isLeft == false)
+            {
+                Debug.Log("isRight");
+                rb2d.AddForce(transform.right * (knockbackXI));
+            }
+           
         }
     }
 }
