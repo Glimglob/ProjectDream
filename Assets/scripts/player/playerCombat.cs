@@ -32,6 +32,8 @@ public class playerCombat : MonoBehaviour
     public bool isGrounded;
     //respawn
     public Transform SpawnPoint;
+    //ice sickle
+    public bool iceSickleUp;
     
 
     void Start()
@@ -39,7 +41,7 @@ public class playerCombat : MonoBehaviour
         
         StartCoroutine(manaregen());
         rb2d = GetComponent<Rigidbody2D>();
-
+        
 
     }
     void checkKnockback()
@@ -59,6 +61,7 @@ public class playerCombat : MonoBehaviour
     {
         playerMovement PM = FindObjectOfType<playerMovement>();
         isLeft = PM.isLeft;
+        
         checkKnockback();
         //import variables
         keyCounter = PlayerHealthbar.keyCounter;
@@ -66,19 +69,21 @@ public class playerCombat : MonoBehaviour
         playerHealth = Mathf.Clamp(playerHealth, 0, 100);
         mana = Mathf.Clamp(mana, 0, 100);
         //death
-        if (playerHealth == 0)
+        if (playerHealth <= 0)
         {
             playerHealth = 100;
             mana = 100;
             gameObject.transform.position = SpawnPoint.position;
-
+            rb2d.velocity = Vector3.zero;
+            rb2d.Sleep();
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
             
             gameObject.transform.position = SpawnPoint.position;
             rb2d.velocity = Vector3.zero;
-            
+            rb2d.Sleep();
+
 
         }
         if (Input.GetMouseButtonDown(1))
@@ -225,6 +230,7 @@ public class playerCombat : MonoBehaviour
         }
         if(collision.tag == "icesickle")
         {
+            iceSickleUp = collision.GetComponent<iceSickle>().iceSickleUp;
             rb2d.AddForce(transform.up * knockbackYI);
             if (isLeft == true)
             {
@@ -236,7 +242,13 @@ public class playerCombat : MonoBehaviour
                 Debug.Log("isRight");
                 rb2d.AddForce(transform.right * (knockbackXI));
             }
-           
+            if(iceSickleUp == true)
+            {
+                takeDamage(100);
+            }else if(iceSickleUp == false)
+            {
+                takeDamage(5);
+            }
         }
     }
 }
