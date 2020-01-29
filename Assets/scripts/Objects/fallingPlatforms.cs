@@ -16,9 +16,9 @@ public class fallingPlatforms : MonoBehaviour
             time = 0;
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if(collision.gameObject.name == "player")
+        if (collision.gameObject.name == "player")
         {
             rb2d.velocity = transform.up * -speed;
             timecount();

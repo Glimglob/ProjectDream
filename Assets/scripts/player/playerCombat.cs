@@ -34,7 +34,8 @@ public class playerCombat : MonoBehaviour
     public Transform SpawnPoint;
     //ice sickle
     public bool iceSickleUp;
-    
+    //falling platform
+    public int FPnum;
 
     void Start()
     {
@@ -83,7 +84,10 @@ public class playerCombat : MonoBehaviour
             gameObject.transform.position = SpawnPoint.position;
             rb2d.velocity = Vector3.zero;
             rb2d.Sleep();
-
+            if(FPnum >= 0)
+            {
+                FindObjectOfType<fellplat>().GetPlatformBack();
+            }
 
         }
         if (Input.GetMouseButtonDown(1))
