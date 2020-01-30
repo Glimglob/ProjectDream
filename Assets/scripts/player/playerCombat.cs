@@ -205,9 +205,14 @@ public class playerCombat : MonoBehaviour
                 }
                 
             }
+        if (collision.tag == "icesickle")
+            {
+                takeDamage(10);
+            }
         }
         
     }
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
