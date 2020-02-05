@@ -191,11 +191,11 @@ public class playerCombat : MonoBehaviour
                     keyCounter--;
                         if (PM.isLeft == false)
                         {
-                            collision.GetComponentInParent<enemyDeath>().takeDamage(3, 200, 200);
+                            collision.GetComponentInParent<enemyDeath>().takeDamage(1, 200, 200);
                         }
                         else if (PM.isLeft == true)
                         {
-                            collision.GetComponentInParent<enemyDeath>().takeDamage(3, -200, 200);
+                            collision.GetComponentInParent<enemyDeath>().takeDamage(1, -200, 200);
                         }
 
                         
