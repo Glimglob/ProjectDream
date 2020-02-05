@@ -1,7 +1,97 @@
 fileFormatVersion: 2
 guid: d5b7d2b6ebaee5b45aef83bbc10a2e19
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5205102955273870788
+    second: Dragoon_0
+  - first:
+      213: 6391618175163510621
+    second: Dragoon_1
+  - first:
+      213: 7599313893052472197
+    second: Dragoon_2
+  - first:
+      213: 6815694643471690519
+    second: Dragoon_3
+  - first:
+      213: -3201557012261324270
+    second: Dragoon_4
+  - first:
+      213: -8057039287688230613
+    second: Dragoon_5
+  - first:
+      213: 2457856770620782969
+    second: Dragoon_6
+  - first:
+      213: -2400835228060612672
+    second: Dragoon_7
+  - first:
+      213: -8339927181018583265
+    second: Dragoon_8
+  - first:
+      213: 8705536627561724129
+    second: Dragoon_9
+  - first:
+      213: -1494091831105188571
+    second: Dragoon_10
+  - first:
+      213: 3567297619650053998
+    second: Dragoon_11
+  - first:
+      213: -4592182845775296812
+    second: Dragoon_12
+  - first:
+      213: 7884465098761237152
+    second: Dragoon_13
+  - first:
+      213: 1650069605592985931
+    second: Dragoon_14
+  - first:
+      213: -2819301426218555572
+    second: Dragoon_15
+  - first:
+      213: -2237064490711125740
+    second: Dragoon_16
+  - first:
+      213: -7356803326522456956
+    second: Dragoon_17
+  - first:
+      213: -5952873457255584514
+    second: Dragoon_18
+  - first:
+      213: 5751561690587450920
+    second: Dragoon_19
+  - first:
+      213: -946924433447620095
+    second: Dragoon_20
+  - first:
+      213: -2693555780042741467
+    second: Dragoon_21
+  - first:
+      213: -5031659563569209056
+    second: Dragoon_22
+  - first:
+      213: -354974544382904682
+    second: Dragoon_23
+  - first:
+      213: -1593347086896223893
+    second: Dragoon_24
+  - first:
+      213: 5267692346171930309
+    second: Dragoon_25
+  - first:
+      213: 8896930436511816887
+    second: Dragoon_26
+  - first:
+      213: -4825149371483553840
+    second: Dragoon_27
+  - first:
+      213: -8577983575455400786
+    second: Dragoon_28
+  - first:
+      213: -4169287143616252816
+    second: Dragoon_29
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +121,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +130,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +153,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +174,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Dragoon_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 167
+        width: 100
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ba8abc3d9341c4cb2a934c7652ee27
+      internalID: -5205102955273870788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragoon_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 167
+        width: 100
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40b34acbaa4f7048b271f4e96b4205e
+      internalID: 6391618175163510621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragoon_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 100
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172c0827fa585924fb50a21df5887551
+      internalID: -3201557012261324270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragoon_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 75
+        width: 100
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e554db9f7e38aac4580986d937d3a69e
+      internalID: -8057039287688230613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragoon_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0961ee810759204f8c62d7484fcb630
+      internalID: 2457856770620782969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragoon_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2622551c085cf4588797b01a320440
+      internalID: -2400835228060612672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
