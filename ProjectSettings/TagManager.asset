@@ -8,6 +8,8 @@ TagManager:
   - hitbox
   - icesickle
   - fireball
+  - treeboss
+  - bosshitbox
   layers:
   - Default
   - TransparentFX

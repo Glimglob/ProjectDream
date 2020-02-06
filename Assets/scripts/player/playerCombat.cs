@@ -210,7 +210,19 @@ public class playerCombat : MonoBehaviour
                 takeDamage(10);
             }
         }
-        
+        if(collision.tag == "bosshitbox")
+        {
+            
+            if (Input.GetMouseButtonDown(0))
+            {
+                keyCounter++;
+                if(keyCounter == 1)
+                {
+                    collision.GetComponentInParent<treeboss>().treeDamage(1);
+                }
+
+            }
+        }
     }
    
     private void OnTriggerEnter2D(Collider2D collision)
