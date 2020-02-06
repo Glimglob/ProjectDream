@@ -1,7 +1,67 @@
 fileFormatVersion: 2
 guid: 333bd07a0a6e21042a7185e06a03ef1a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4946200142778984492
+    second: Skeleton Warrior A4 Attack_0
+  - first:
+      213: 5975476288950155740
+    second: Skeleton Warrior A4 Attack_1
+  - first:
+      213: 5444684082189716065
+    second: Skeleton Warrior A4 Attack_2
+  - first:
+      213: -7152276742407540920
+    second: Skeleton Warrior A4 Attack_3
+  - first:
+      213: -588307970510576870
+    second: Skeleton Warrior A4 Attack_4
+  - first:
+      213: 8299749246236159742
+    second: Skeleton Warrior A4 Attack_5
+  - first:
+      213: -2800275113425064773
+    second: Skeleton Warrior A4 Attack_6
+  - first:
+      213: -2314045034084503281
+    second: Skeleton Warrior A4 Attack_7
+  - first:
+      213: -6994269455745113043
+    second: Skeleton Warrior A4 Attack_8
+  - first:
+      213: -8768650691902739797
+    second: Skeleton Warrior A4 Attack_9
+  - first:
+      213: -6739430642681387924
+    second: Skeleton Warrior A4 Attack_10
+  - first:
+      213: 9085173716965618083
+    second: Skeleton Warrior A4 Attack_11
+  - first:
+      213: -5101534181022954835
+    second: Skeleton Warrior A4 Attack_12
+  - first:
+      213: 173755350552538362
+    second: Skeleton Warrior A4 Attack_13
+  - first:
+      213: -213950037037511874
+    second: Skeleton Warrior A4 Attack_14
+  - first:
+      213: -8915575749063603200
+    second: Skeleton Warrior A4 Attack_15
+  - first:
+      213: 5938815843994685482
+    second: Skeleton Warrior A4 Attack_16
+  - first:
+      213: 5142255455887915128
+    second: Skeleton Warrior A4 Attack_17
+  - first:
+      213: -7410612262001432463
+    second: Skeleton Warrior A4 Attack_18
+  - first:
+      213: -2309640800218458476
+    second: Skeleton Warrior A4 Attack_19
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +91,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +100,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +123,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -72,7 +144,427 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 476
+        width: 87
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80da8082040c1c9438843c7b4d70e82c
+      internalID: -4946200142778984492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 478
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530f7db027161b2468afca81c851ef24
+      internalID: 5975476288950155740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_2
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 482
+        width: 76
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3496ec2d932524287c74e35a1435c9
+      internalID: 5444684082189716065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_3
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 479
+        width: 77
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba3278f9167a964a87bb8a11dfacdcf
+      internalID: -7152276742407540920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 357
+        width: 79
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f844d3c1d3f63ea43b024134a7c2eafb
+      internalID: -588307970510576870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 355
+        width: 93
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af7d7c4e4570ad4789903c68612f07d
+      internalID: 8299749246236159742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 358
+        width: 97
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7290952d2eabe9e4d9f24cb280728feb
+      internalID: -2800275113425064773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 357
+        width: 84
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be235472ef444343bb8842e34b436ca
+      internalID: -2314045034084503281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 240
+        width: 82
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a465a0ba82cc2e4dba4bdac67827425
+      internalID: -6994269455745113043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 239
+        width: 96
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724733359531dc840b5e72ba43e6da35
+      internalID: -8768650691902739797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_10
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 240
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43aacd1834c39dd4fae5d82b2d0dcc96
+      internalID: -6739430642681387924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_11
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 237
+        width: 86
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2517b428dd1195842b663ffeb3de8545
+      internalID: 9085173716965618083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 112
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a3ac8089cc5ea4bb975fe26d45559e
+      internalID: -5101534181022954835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_13
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 121
+        width: 72
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18659df74cd428a469779db0f2d83f8a
+      internalID: 173755350552538362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_14
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 118
+        width: 82
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c5b3b4fab03dd45ac1eb147a39684b
+      internalID: -213950037037511874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_15
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 118
+        width: 88
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98eca7342b26b3b49a07a767dc2eca54
+      internalID: -8915575749063603200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 87
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad50311d1676bb43a8c9400074dc876
+      internalID: 5938815843994685482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_17
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2
+        width: 108
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bce65caed2649343943d212e6116cb8
+      internalID: 5142255455887915128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_18
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 0
+        width: 99
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a20350c0a40404199faddc84528771
+      internalID: -7410612262001432463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior A4 Attack_19
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2
+        width: 112
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e3108ddc94cf74583bd420eeeb4067
+      internalID: -2309640800218458476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
