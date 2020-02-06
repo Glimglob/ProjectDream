@@ -179,10 +179,10 @@ TextureImporter:
       name: Dragoon_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 167
-        width: 100
-        height: 133
+        x: 11
+        y: 188
+        width: 78
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +190,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3ba8abc3d9341c4cb2a934c7652ee27
+      spriteID: 0b3c5dbfcd4a4ce4aa07cadc4800c8f5
       internalID: -5205102955273870788
       vertices: []
       indices: 
@@ -200,10 +200,10 @@ TextureImporter:
       name: Dragoon_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 167
-        width: 100
-        height: 133
+        x: 113
+        y: 192
+        width: 80
+        height: 71
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,8 +211,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d40b34acbaa4f7048b271f4e96b4205e
+      spriteID: 8df3528f2285cee4db1fc2419e5cbf13
       internalID: 6391618175163510621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragoon_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 91
+        width: 80
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da951356a34da34cbb81916b0ed9e19
+      internalID: 7599313893052472197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragoon_3
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 92
+        width: 81
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f78e3819999b404e8182c46776fff74
+      internalID: 6815694643471690519
       vertices: []
       indices: 
       edges: []
@@ -221,10 +263,10 @@ TextureImporter:
       name: Dragoon_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 75
-        width: 100
-        height: 75
+        x: 18
+        y: 0
+        width: 76
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,7 +274,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 172c0827fa585924fb50a21df5887551
+      spriteID: c71dc47d13be70242aa0628e4afadc35
       internalID: -3201557012261324270
       vertices: []
       indices: 
@@ -242,10 +284,10 @@ TextureImporter:
       name: Dragoon_5
       rect:
         serializedVersion: 2
-        x: 100
-        y: 75
-        width: 100
-        height: 75
+        x: 120
+        y: 0
+        width: 73
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,50 +295,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e554db9f7e38aac4580986d937d3a69e
+      spriteID: a1797c48404cfc64787535da33dbcd57
       internalID: -8057039287688230613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragoon_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 100
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0961ee810759204f8c62d7484fcb630
-      internalID: 2457856770620782969
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dragoon_7
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 75
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c2622551c085cf4588797b01a320440
-      internalID: -2400835228060612672
       vertices: []
       indices: 
       edges: []
