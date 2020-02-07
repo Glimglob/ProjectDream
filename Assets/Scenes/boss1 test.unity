@@ -711,7 +711,7 @@ MonoBehaviour:
   leftAcorn: {fileID: 391362925}
   rightAcorn: {fileID: 1267690634}
   Acorn: {fileID: 4424025997275088261, guid: 33955d3bd1977554cae34d5169871cdd, type: 3}
-  aCount: 0
+  aCount: 1
 --- !u!61 &707256214
 BoxCollider2D:
   m_ObjectHideFlags: 0
