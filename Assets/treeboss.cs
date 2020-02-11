@@ -23,20 +23,19 @@ public class treeboss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(atkTimer == 5)
+        if (atkTimer <= 0)
         {
-            StartCoroutine(lacornspawn()) ;
-            StopCoroutine(atkTimerUp());
+            StopCoroutine(lacornspawn());
+            StopCoroutine(atkTimerDown());
+            StartCoroutine(racornspawn());
+            
         }
 
     }
 
-    
-    public void racornSpawn()
-    {
 
-    }
     
+
 
     public void treeDamage(int dam)
     {
@@ -45,68 +44,100 @@ public class treeboss : MonoBehaviour
     IEnumerator atkTimerUp()
     {
         while (true)
+
         {
             atkTimer += 1;
-            yield return new WaitForSeconds(1);
-            
+                yield return new WaitForSeconds(1);
+            if(atkTimer == 5)
+            {
+                StopCoroutine(atkTimerUp());
+                StartCoroutine(lacornspawn());
+                
+            }
+
         }
-        
+
+    }
+    IEnumerator atkTimerUpCont()
+    {
+        while (true)
+        {
+            if (atkTimer == 0)
+            {
+                atkTimer += 1;
+                yield return new WaitForSeconds(1);
+            }
+            else
+            {
+                yield return null;
+            }
+
+        }
+
     }
     IEnumerator atkTimerDown()
     {
         while (true)
         {
-            atkTimer -= 1;
-            yield return new WaitForSeconds(1);
-
-        }
-
-    }
-    IEnumerator lacornspawn()
-    {
-        while (true)
-        {
-            StartCoroutine(atkTimerDown());
-            if (atkTimer >= 0)
-            {
-                Instantiate(Acorn, leftAcorn.position, Quaternion.identity);
+            
+                atkTimer -= 1;
                 yield return new WaitForSeconds(1);
-               if(atkTimer <= 0)
+                if(atkTimer <= 0)
                 {
-                    StopCoroutine(atkTimerDown());
-                    StartCoroutine(racornspawn());
-                }
-            }
-            else
+                StartCoroutine(racornspawn());
+                StopCoroutine(lacornspawn());
+                StopCoroutine(atkTimerDown());
+                 }else
             {
                 yield return null;
             }
+            
+
+
         }
-
-
     }
-    IEnumerator racornspawn()
-    {
-        while (true)
+        IEnumerator lacornspawn()
         {
-            StartCoroutine(atkTimerUp());
-            if (atkTimer <= 5)
+            while (true)
             {
-                Instantiate(Acorn, leftAcorn.position, Quaternion.identity);
-                yield return new WaitForSeconds(1);
-                if (atkTimer >= 5)
+                StartCoroutine(atkTimerDown());
+                if (atkTimer >= 0)
                 {
-                    StopCoroutine(atkTimerUp());
-                    StartCoroutine(lacornspawn());
+                    Instantiate(Acorn, leftAcorn.position, Quaternion.identity);
+                    yield return new WaitForSeconds(1);
                     
                 }
+                else
+                {
+                    yield return null;
+                }
             }
-            else
-            {
-                yield return null;
-            }
+
+
         }
+        IEnumerator racornspawn()
+        {
+            while (true)
+            {
+            
+            StartCoroutine(atkTimerUp());
+                if (atkTimer <= 5)
+                {
+                    Instantiate(Acorn, leftAcorn.position, Quaternion.identity);
+                    yield return new WaitForSeconds(1);
+                    if (atkTimer >= 5)
+                    {
+                        StopCoroutine(atkTimerUp());
+                        StartCoroutine(lacornspawn());
+
+                    }
+                }
+                else
+                {
+                    yield return null;
+                }
+            }
 
 
+        }
     }
-}
