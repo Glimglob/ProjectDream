@@ -623,7 +623,7 @@ GameObject:
   - component: {fileID: 707256211}
   - component: {fileID: 707256210}
   - component: {fileID: 707256214}
-  - component: {fileID: 707256213}
+  - component: {fileID: 707256209}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: treeboss
@@ -631,6 +631,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &707256209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707256208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943bc72041b4a2d4db3e49e6548eb47d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAcorn: {fileID: 391362925}
+  rightAcorn: {fileID: 1267690634}
+  Acorn: {fileID: 4424025997275088261, guid: 33955d3bd1977554cae34d5169871cdd, type: 3}
+  acornCount: 0
 --- !u!23 &707256210
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -694,24 +710,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &707256213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707256208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67f44e2ab7461034c9dc16aed624ba33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treehealth: 500
-  atkTimer: 0
-  leftAcorn: {fileID: 391362925}
-  rightAcorn: {fileID: 1267690634}
-  Acorn: {fileID: 4424025997275088261, guid: 33955d3bd1977554cae34d5169871cdd, type: 3}
-  aCount: 1
 --- !u!61 &707256214
 BoxCollider2D:
   m_ObjectHideFlags: 0

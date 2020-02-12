@@ -23,13 +23,7 @@ public class treeboss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (atkTimer <= 0)
-        {
-            StopCoroutine(lacornspawn());
-            StopCoroutine(atkTimerDown());
-            StartCoroutine(racornspawn());
-            
-        }
+        
 
     }
 
@@ -41,6 +35,10 @@ public class treeboss : MonoBehaviour
     {
         treehealth = treehealth - dam;
     }
+    public void restartTime()
+    {
+        StartCoroutine(atkTimerUp());
+    }
     IEnumerator atkTimerUp()
     {
         while (true)
@@ -50,7 +48,7 @@ public class treeboss : MonoBehaviour
                 yield return new WaitForSeconds(1);
             if(atkTimer == 5)
             {
-                StopCoroutine(atkTimerUp());
+                StopAllCoroutines();
                 StartCoroutine(lacornspawn());
                 
             }
@@ -103,9 +101,14 @@ public class treeboss : MonoBehaviour
                 StartCoroutine(atkTimerDown());
                 if (atkTimer >= 0)
                 {
-                    Instantiate(Acorn, leftAcorn.position, Quaternion.identity);
-                    yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(1);
+                Instantiate(Acorn, leftAcorn.position, Quaternion.identity);
                     
+                    if(atkTimer == 0)
+                    {
+                    StopAllCoroutines();
+                    StartCoroutine(racornspawn());
+                    }
                 }
                 else
                 {
@@ -119,16 +122,16 @@ public class treeboss : MonoBehaviour
         {
             while (true)
             {
-            
-            StartCoroutine(atkTimerUp());
-                if (atkTimer <= 5)
+
+            StartCoroutine(atkTimerDown());
+                if (atkTimer <= 0)
                 {
-                    Instantiate(Acorn, leftAcorn.position, Quaternion.identity);
+                    Instantiate(Acorn, rightAcorn.position, Quaternion.identity);
                     yield return new WaitForSeconds(1);
-                    if (atkTimer >= 5)
+                    if (atkTimer <= -5)
                     {
-                        StopCoroutine(atkTimerUp());
-                        StartCoroutine(lacornspawn());
+                        StopAllCoroutines();
+                        restartTime();
 
                     }
                 }
