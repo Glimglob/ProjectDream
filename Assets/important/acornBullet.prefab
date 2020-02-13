@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 4424025997275088258}
   - component: {fileID: 5927249383663896686}
   - component: {fileID: 2108320047344711177}
+  - component: {fileID: 8520590322224434654}
+  - component: {fileID: 1016989307404762767}
   m_Layer: 0
-  m_Name: New Piskel_0
+  m_Name: acornBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,3 +122,37 @@ CircleCollider2D:
   m_Offset: {x: -0.002183882, y: 0}
   serializedVersion: 2
   m_Radius: 0.24447906
+--- !u!114 &8520590322224434654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424025997275088261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b2e87e96ab01048b52567f56ea3bba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  rigidbody2d: {fileID: 5927249383663896686}
+  rc2d: {fileID: 2108320047344711177}
+--- !u!95 &1016989307404762767
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424025997275088261}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2650d724fb018354c84989286e0d6314, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

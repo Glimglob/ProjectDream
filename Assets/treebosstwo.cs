@@ -16,35 +16,28 @@ public class treebosstwo : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if(acornCount == 5)
-        {
-            CancelInvoke();
-            bossSecond();
-        }
-        if(acornCount >= -5)
-        {
-            CancelInvoke();
-            bossStart();
-        }
-    }
-    void bossStart()
-    {
-        
-    }
-    void bossSecond()
-    {
-        InvokeRepeating("acornRight", 5, 1);
-    }
+    
+    
+    
     void acornleft()
     {
       Instantiate(Acorn, leftAcorn.position, Quaternion.identity);
         acornCount += 1;
+        if(acornCount == 5)
+        {
+            CancelInvoke();
+            InvokeRepeating("acornright", 5, 1);
+        }
     }
-    void acornRight()
+    void acornright()
     {
         Instantiate(Acorn, rightAcorn.position, Quaternion.identity);
         acornCount -= 1;
+        if(acornCount == 0)
+        {
+            CancelInvoke();
+            InvokeRepeating("acornleft", 5, 1);
+        }
     }
+    
 }

@@ -10,6 +10,7 @@ TagManager:
   - fireball
   - treeboss
   - bosshitbox
+  - floor
   layers:
   - Default
   - TransparentFX
