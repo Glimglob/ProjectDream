@@ -218,11 +218,12 @@ public class playerCombat : MonoBehaviour
                 keyCounter++;
                 if(keyCounter == 1)
                 {
-                    collision.GetComponentInParent<treeboss>().treeDamage(1);
+                    collision.GetComponentInParent<treebosstwo>().treeDamage(1);
                 }
 
             }
         }
+        
     }
    
     private void OnTriggerEnter2D(Collider2D collision)

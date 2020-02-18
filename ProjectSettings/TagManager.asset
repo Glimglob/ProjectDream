@@ -11,6 +11,7 @@ TagManager:
   - treeboss
   - bosshitbox
   - floor
+  - acorn
   layers:
   - Default
   - TransparentFX
