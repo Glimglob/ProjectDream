@@ -11,10 +11,11 @@ public class treebosstwo : MonoBehaviour
     public float acornCount;
     public Animator anim;
     public float timer;
+    public float treehealth = 350;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Invoke("acornStart", 4);
         InvokeRepeating("acornleft", 5, 1);
         anim = GetComponent<Animator>();
         
@@ -25,8 +26,18 @@ public class treebosstwo : MonoBehaviour
     {
         
     }
-
-
+    public void treeDamage(int dam)
+    {
+        treehealth = treehealth - dam;
+    }
+    public void acornStart()
+    {
+        anim.SetBool("acorn Left", true);
+    }
+    public void acornSecond()
+    {
+        anim.SetBool("acorn Right", true);
+    }
     public void acornleft()
     {
         
@@ -40,12 +51,13 @@ public class treebosstwo : MonoBehaviour
             anim.SetBool("acorn Left", false);
             anim.SetBool("look left", false);
             anim.SetBool("look right", true);
+            Invoke("acornSecond", 4);
             InvokeRepeating("acornright", 5, 1);
         }
     }
    public void acornright()
     {
-        anim.SetBool("acorn Right", true);
+        
         Instantiate(AcornR, rightAcorn.position, Quaternion.identity);
         acornCount -= 1;
         if(acornCount == 0)
@@ -54,6 +66,7 @@ public class treebosstwo : MonoBehaviour
             anim.SetBool("acorn Right", false);
             anim.SetBool("look right", false);
             anim.SetBool("look left", true);
+            Invoke("acornStart", 4);
             InvokeRepeating("acornleft", 5, 1);
         }
 

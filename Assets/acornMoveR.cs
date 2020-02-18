@@ -23,4 +23,9 @@ public class acornMoveR : MonoBehaviour
     {
         rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        collision.GetComponent<playerCombat>().takeDamage(20);
+        Destroy(gameObject);
+    }
 }
