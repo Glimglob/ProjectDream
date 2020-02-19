@@ -26,8 +26,12 @@ public class acornMove : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetComponent<playerCombat>().takeDamage(20);
-        Destroy(gameObject);
+        if (collision.tag == "Player")
+        {
+            collision.GetComponent<playerCombat>().takeDamage(20);
+            Destroy(gameObject);
+        } 
+        
     }
 }
 

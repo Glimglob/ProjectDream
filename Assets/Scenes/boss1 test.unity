@@ -969,6 +969,7 @@ MonoBehaviour:
   acornCount: 0
   anim: {fileID: 995935525}
   timer: 0
+  treehealth: 350
 --- !u!1 &1267690633
 GameObject:
   m_ObjectHideFlags: 0
