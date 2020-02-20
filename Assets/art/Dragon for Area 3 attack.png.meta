@@ -1,0 +1,1135 @@
+fileFormatVersion: 2
+guid: e24ee45b98fbee14b9759b8ca54b3cea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3538911805308777668
+    second: Dragon for Area 3 attack_0
+  - first:
+      213: 6133030819239190472
+    second: Dragon for Area 3 attack_1
+  - first:
+      213: -5310562186430740131
+    second: Dragon for Area 3 attack_2
+  - first:
+      213: 8134056773052231947
+    second: Dragon for Area 3 attack_3
+  - first:
+      213: -4846875563555280366
+    second: Dragon for Area 3 attack_4
+  - first:
+      213: -3506246393205913905
+    second: Dragon for Area 3 attack_5
+  - first:
+      213: 8395676524356312494
+    second: Dragon for Area 3 attack_6
+  - first:
+      213: 7468442321255924621
+    second: Dragon for Area 3 attack_7
+  - first:
+      213: -7387633918776567904
+    second: Dragon for Area 3 attack_8
+  - first:
+      213: -7854413524944117861
+    second: Dragon for Area 3 attack_9
+  - first:
+      213: -8662624695347235289
+    second: Dragon for Area 3 attack_10
+  - first:
+      213: -3642621441024817520
+    second: Dragon for Area 3 attack_11
+  - first:
+      213: 3132733899056212631
+    second: Dragon for Area 3 attack_12
+  - first:
+      213: 5285478374729988227
+    second: Dragon for Area 3 attack_13
+  - first:
+      213: 358483055332239265
+    second: Dragon for Area 3 attack_14
+  - first:
+      213: -4086029422513729896
+    second: Dragon for Area 3 attack_15
+  - first:
+      213: -7774013541571887761
+    second: Dragon for Area 3 attack_16
+  - first:
+      213: 6822104124400809016
+    second: Dragon for Area 3 attack_17
+  - first:
+      213: -6289354881466614963
+    second: Dragon for Area 3 attack_18
+  - first:
+      213: 7884632722667063695
+    second: Dragon for Area 3 attack_19
+  - first:
+      213: -3536978769766217600
+    second: Dragon for Area 3 attack_20
+  - first:
+      213: 5896949596242527665
+    second: Dragon for Area 3 attack_21
+  - first:
+      213: 2335046478403163197
+    second: Dragon for Area 3 attack_22
+  - first:
+      213: 1314627276922493581
+    second: Dragon for Area 3 attack_23
+  - first:
+      213: -5825648466580678770
+    second: Dragon for Area 3 attack_24
+  - first:
+      213: -412477826776992974
+    second: Dragon for Area 3 attack_25
+  - first:
+      213: -2212710127055838976
+    second: Dragon for Area 3 attack_26
+  - first:
+      213: 6544512486425319282
+    second: Dragon for Area 3 attack_27
+  - first:
+      213: -478666957910164154
+    second: Dragon for Area 3 attack_28
+  - first:
+      213: -5187782189080321968
+    second: Dragon for Area 3 attack_29
+  - first:
+      213: 2996086204174997466
+    second: Dragon for Area 3 attack_30
+  - first:
+      213: 5576233989405446321
+    second: Dragon for Area 3 attack_31
+  - first:
+      213: 121936417212863775
+    second: Dragon for Area 3 attack_32
+  - first:
+      213: 7205351883868698180
+    second: Dragon for Area 3 attack_33
+  - first:
+      213: -9083560400113422935
+    second: Dragon for Area 3 attack_34
+  - first:
+      213: 6702611695445516638
+    second: Dragon for Area 3 attack_35
+  - first:
+      213: 2850640316633206197
+    second: Dragon for Area 3 attack_36
+  - first:
+      213: 2789898787094002680
+    second: Dragon for Area 3 attack_37
+  - first:
+      213: -36129303038735108
+    second: Dragon for Area 3 attack_38
+  - first:
+      213: -1434830698907269617
+    second: Dragon for Area 3 attack_39
+  - first:
+      213: 8652284172165423913
+    second: Dragon for Area 3 attack_40
+  - first:
+      213: -6712408345883012495
+    second: Dragon for Area 3 attack_41
+  - first:
+      213: -6289979910121821052
+    second: Dragon for Area 3 attack_42
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1069
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360e7ee20fd12c143a13142a91714f9d
+      internalID: 3538911805308777668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1056
+        width: 512
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6b047e52240344abb99ad63c0a2978
+      internalID: 6133030819239190472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_2
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1069
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff7db479defa4649923a1909d550a58
+      internalID: -5310562186430740131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_3
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1048
+        width: 496
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e049e4a359e1f44597e7dd76a14c990
+      internalID: 8134056773052231947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1049
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4171b5fc8254244bd8333fbdaa28b5
+      internalID: -4846875563555280366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_5
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1049
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67faf03f549840f4592c3ec22d944869
+      internalID: -3506246393205913905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1026
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4d139dc84b68b4f837aaf6f2b49d8a
+      internalID: 8395676524356312494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_7
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1026
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0204bc45d949ed747b0c95bfd5c9afb9
+      internalID: 7468442321255924621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 869
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeab08fc0a2ded442822307fe60f2683
+      internalID: -7387633918776567904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_9
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 848
+        width: 496
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7fc291f84d1cd4bbd94e786051f763
+      internalID: -7854413524944117861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_10
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 869
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6871615dfd8ef8646a73c9e9b81e1ea9
+      internalID: -8662624695347235289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_11
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 848
+        width: 512
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b47dbbbe33cf8741a29980188022506
+      internalID: -3642621441024817520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 849
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95bf8f66cffcab042b844cc7bc76b117
+      internalID: 3132733899056212631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_13
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 849
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a89d504029cc3f4692707fda7ddc317
+      internalID: 5285478374729988227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 826
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de686bbcf68105b44b6fa724c2ba77ae
+      internalID: 358483055332239265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_15
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 826
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc78c868768c8ce4f8ce2fd442438066
+      internalID: -4086029422513729896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 669
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7914f8a36d00f144a1f9c8999580edd
+      internalID: -7774013541571887761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_17
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 648
+        width: 520
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2eccc7991a3f6a4d9f55e6155b3e215
+      internalID: 6822104124400809016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_18
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 669
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8c1a11c89e55b4b8aef1c14d17dc51
+      internalID: -6289354881466614963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_19
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 648
+        width: 504
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee23f5360c3c53468af6a5389041c03
+      internalID: 7884632722667063695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 649
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16edffb1c3349564ab8f0067bf541633
+      internalID: -3536978769766217600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_21
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 649
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11e01eb54dbb46478cf3a8f023c56dc
+      internalID: 5896949596242527665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_22
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 626
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7b02b0c63de564490533b7bb778942
+      internalID: 2335046478403163197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_23
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 626
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a118306fd5d2d4383fd22613355049
+      internalID: 1314627276922493581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_24
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 569
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bea025c021b8f469af089ced42a6c5
+      internalID: -5825648466580678770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_25
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 539
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cf4206621c81543acf6ba92abebe15
+      internalID: -412477826776992974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_26
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 456
+        width: 504
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1bddc22cc848c4d97f61c657dedbc7
+      internalID: -2212710127055838976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_27
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 549
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7736380fa536400458001e0a74845e5b
+      internalID: 6544512486425319282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_28
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 464
+        width: 496
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2607cb17ea38154c9fa7adfebc5d46d
+      internalID: -478666957910164154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_29
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 490
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df3b8b6203becb419a98f5725d86f36
+      internalID: -5187782189080321968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_30
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 465
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d52de21a03f6784faa06671b0fdd113
+      internalID: 2996086204174997466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_31
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 450
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4d6870d3af4e74594484bdd3e9b88a
+      internalID: 5576233989405446321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_32
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 272
+        width: 516
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054a7ceb01850d64eb5f2a077d439a7a
+      internalID: 121936417212863775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_33
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 340
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be532929eec789408d76dfe18979a51
+      internalID: 7205351883868698180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_34
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 264
+        width: 498
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48861a74b26166848899d89bf442d825
+      internalID: -9083560400113422935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 324
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569fb97ed768dd34a84a0481cb0f9e94
+      internalID: 6702611695445516638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 281
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f26dbea81dae0428f81e6a8160e4dd
+      internalID: 2850640316633206197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_37
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 270
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b959d5f62f928ac4d977ffaae8530767
+      internalID: 2789898787094002680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_38
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 247
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74acbacc25070a43a23ab3ac0610fbd
+      internalID: -36129303038735108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_39
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 162
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef635ab8ef0e5d245bad64d6b77dcc30
+      internalID: -1434830698907269617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_40
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 512
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a55e503013847d4c81d3259ef8441a8
+      internalID: 8652284172165423913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_41
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 142
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4a0afdb4e3cbe4990fea8b111da22b
+      internalID: -6712408345883012495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dragon for Area 3 attack_42
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 119
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cc6b06bab510446a25a77e8d2a6b7c
+      internalID: -6289979910121821052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
