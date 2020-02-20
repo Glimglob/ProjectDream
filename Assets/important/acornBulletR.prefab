@@ -138,6 +138,8 @@ MonoBehaviour:
   speed: 10
   rigidbody2d: {fileID: 6696379869411594662}
   rc2d: {fileID: 1436017176958644161}
+  touch: 0
+  anim: {fileID: 50262564341376839}
 --- !u!95 &50262564341376839
 Animator:
   serializedVersion: 3
