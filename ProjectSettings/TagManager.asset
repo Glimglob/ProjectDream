@@ -12,6 +12,7 @@ TagManager:
   - bosshitbox
   - floor
   - acorn
+  - dragon
   layers:
   - Default
   - TransparentFX
