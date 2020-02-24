@@ -10,6 +10,7 @@ public class acornMoveR : MonoBehaviour
     public int touch;
     public Animator anim;
     public Collision collision;
+    public float delay = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +36,10 @@ public class acornMoveR : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        anim.SetBool("Explode", true);
-        explode();
+        if (collision.tag == "Player")
+        {
+            collision.GetComponent<playerCombat>().takeDamage(20);
+            anim.SetBool("Explode", true);
+        }
     }
 }
