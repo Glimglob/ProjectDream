@@ -12,6 +12,7 @@ public class treebosstwo : MonoBehaviour
     public Animator anim;
     public float timer;
     public float treehealth = 350;
+    public portalLock PL;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +25,22 @@ public class treebosstwo : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        
+        if(treehealth <= 0)
+        {
+            portalLock PL = FindObjectOfType<portalLock>();
+            PL.unlock();
+         
+        }
     }
     public void treeDamage(int dam)
+    {
+        if (treehealth >= 200)
+        {
+            treehealth = treehealth - dam;
+        }
+       
+    }
+    public void treeBurning(int dam)
     {
         treehealth = treehealth - dam;
     }
@@ -71,5 +85,20 @@ public class treebosstwo : MonoBehaviour
         }
 
     }
-    
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "fireball")
+        {
+            if(treehealth >= 200)
+            {
+                treeBurning(5);
+            }
+            if(treehealth <= 200)
+            {
+                treeBurning(20);
+            }
+            Destroy(collision.gameObject);
+        }
+    }
+
 }
