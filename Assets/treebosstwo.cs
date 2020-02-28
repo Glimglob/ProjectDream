@@ -37,6 +37,9 @@ public class treebosstwo : MonoBehaviour
         if (treehealth >= 200)
         {
             treehealth = treehealth - dam;
+        }else if(treehealth <= 200)
+        {
+            print("use fire");
         }
        
     }
