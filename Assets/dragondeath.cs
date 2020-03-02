@@ -14,14 +14,14 @@ public class dragondeath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dragonhealth == 0)
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
         {
-            Destroy(gameObject);
+            collision.GetComponent<playerCombat>().takeDamage(100);
         }
     }
 
-    public void takeDamage(int dam)
-    {
-        dragonhealth = dragonhealth - dam;
-    }
 }

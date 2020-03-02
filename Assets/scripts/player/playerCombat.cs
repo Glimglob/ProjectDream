@@ -223,13 +223,7 @@ public class playerCombat : MonoBehaviour
 
             }
         }
-        if (collision.tag == "dragon")
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                collision.GetComponent<dragondeath>().takeDamage(1);
-            }
-        }
+        
 
     }
    
@@ -279,10 +273,7 @@ public class playerCombat : MonoBehaviour
                 takeDamage(5);
             }
         }
-        if(collision.tag == "dragon")
-        {
-            GetComponent<dragondeath>().takeDamage(1);
-        }
+       
     }
 }
 

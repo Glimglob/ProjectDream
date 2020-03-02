@@ -13,6 +13,7 @@ public class playerMovement : MonoBehaviour
     public bool isLeft;
     public bool isGrounded;
     public Animator animator;
+    public int keycounter;
     //After the group has the sprite and a box collider is made, change Circlecollider2d to box collider and change every rc2d on script.
 
 
@@ -42,10 +43,12 @@ public class playerMovement : MonoBehaviour
             moveY = 0;
             isLeft = true;
         }
-        if (IsGrounded() && Input.GetKey(KeyCode.W))
+        if (keycounter <= 1 && IsGrounded() && Input.GetKey(KeyCode.W))
         {
             rb.velocity = Vector2.up * jumpVelocity;
             isLeft = false;
+            keycounter++;
+            keycounter--;
         }
 
 
