@@ -74,7 +74,7 @@ public class treebosstwo : MonoBehaviour
                 InvokeRepeating("acornright", 5, 1);
             }else if(treehealth <= 200 && treehealth >= 160)
             {
-
+                InvokeRepeating("treeburn", 2, 1);
             }
         }
     }
