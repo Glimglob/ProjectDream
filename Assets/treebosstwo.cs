@@ -8,6 +8,8 @@ public class treebosstwo : MonoBehaviour
     public Transform rightAcorn;
     public GameObject Acorn;
     public GameObject AcornR;
+    public Transform endL;
+    public Transform endR;
     public float acornCount;
     public Animator anim;
     public float timer;
@@ -94,12 +96,39 @@ public class treebosstwo : MonoBehaviour
                 Invoke("acornStart", 4);
                 InvokeRepeating("acornleft", 5, 1);
             }
+            else if (treehealth <= 200 && treehealth >= 160)
+            {
+                InvokeRepeating("treeburn", 2, 1);
+            }
         }
 
     }
     public void treeburn()
     {
-
+        anim.SetBool("burn1", true);
+        Instantiate(AcornR, endR.position, Quaternion.identity);
+        Instantiate(Acorn, endL.position, Quaternion.identity);
+        if(treehealth <= 160 && treehealth >= 120)
+        {
+            anim.SetBool("burn1", false);
+            anim.SetBool("burn2", true);
+        }
+        if (treehealth <= 120 && treehealth >= 80)
+        {
+            anim.SetBool("burn3", true);
+        }
+        if (treehealth <= 80 && treehealth >= 40)
+        {
+            anim.SetBool("burn4", true);
+        }
+        if (treehealth <= 40 && treehealth >= 0)
+        {
+            anim.SetBool("burn5", true);
+        }
+        if(treehealth <= 0)
+        {
+            anim.SetBool("zero", true);
+        }
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
