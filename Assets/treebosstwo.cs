@@ -68,8 +68,14 @@ public class treebosstwo : MonoBehaviour
             anim.SetBool("acorn Left", false);
             anim.SetBool("look left", false);
             anim.SetBool("look right", true);
-            Invoke("acornSecond", 4);
-            InvokeRepeating("acornright", 5, 1);
+            if (treehealth >= 200)
+            {
+                Invoke("acornSecond", 4);
+                InvokeRepeating("acornright", 5, 1);
+            }else if(treehealth <= 200 && treehealth >= 160)
+            {
+                InvokeRepeating("treeburn", 2, 1);
+            }
         }
     }
    public void acornright()
@@ -83,9 +89,16 @@ public class treebosstwo : MonoBehaviour
             anim.SetBool("acorn Right", false);
             anim.SetBool("look right", false);
             anim.SetBool("look left", true);
-            Invoke("acornStart", 4);
-            InvokeRepeating("acornleft", 5, 1);
+            if (treehealth >= 200)
+            {
+                Invoke("acornStart", 4);
+                InvokeRepeating("acornleft", 5, 1);
+            }
         }
+
+    }
+    public void treeburn()
+    {
 
     }
     public void OnTriggerEnter2D(Collider2D collision)
