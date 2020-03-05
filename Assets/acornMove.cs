@@ -9,6 +9,7 @@ public class acornMove : MonoBehaviour
     public CircleCollider2D rc2d;
     public Animator anim;
     public float timer;
+    public EdgeCollider2D treecol;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,16 @@ public class acornMove : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
+        if (collision.gameObject.tag == "treeboss")
+        {
+            treecol = collision.gameObject.GetComponent<EdgeCollider2D>();
+            Physics2D.IgnoreCollision(treecol, rc2d);
+        }
+        else
+        {
+            rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
+        }
+        
         
     }
     private void OnTriggerEnter2D(Collider2D collision)

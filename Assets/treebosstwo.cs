@@ -8,8 +8,12 @@ public class treebosstwo : MonoBehaviour
     public Transform rightAcorn;
     public GameObject Acorn;
     public GameObject AcornR;
+    public GameObject AcornUL;
+    public GameObject AcornUR;
     public Transform endL;
     public Transform endR;
+    public Transform endUR;
+    public Transform endUL;
     public float acornCount;
     public Animator anim;
     public float timer;
@@ -108,7 +112,9 @@ public class treebosstwo : MonoBehaviour
         anim.SetBool("burn1", true);
         Instantiate(AcornR, endR.position, Quaternion.identity);
         Instantiate(Acorn, endL.position, Quaternion.identity);
-        if(treehealth <= 160 && treehealth >= 120)
+        Instantiate(AcornUR, endUR.position, Quaternion.identity);
+        Instantiate(AcornUL, endUL.position, Quaternion.identity);
+        if (treehealth <= 160 && treehealth >= 120)
         {
             anim.SetBool("burn1", false);
             anim.SetBool("burn2", true);

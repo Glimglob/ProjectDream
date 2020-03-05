@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5300798736828884876}
   - component: {fileID: 1016989307404762767}
   - component: {fileID: 3044037035807234886}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: acornBullet
   m_TagString: acorn
   m_Icon: {fileID: 0}
@@ -138,6 +138,8 @@ MonoBehaviour:
   speed: 10
   rigidbody2d: {fileID: 5927249383663896686}
   rc2d: {fileID: 2108320047344711177}
+  anim: {fileID: 0}
+  timer: 0
 --- !u!95 &1016989307404762767
 Animator:
   serializedVersion: 3
