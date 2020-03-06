@@ -19,13 +19,14 @@ public class treebosstwo : MonoBehaviour
     public float timer;
     public float treehealth = 350;
     public portalLock PL;
+    public playerCombat PC;
     // Start is called before the first frame update
     void Start()
     {
         Invoke("acornStart", 4);
         InvokeRepeating("acornleft", 5, 1);
         anim = GetComponent<Animator>();
-        
+       
     }
 
     // Update is called once per frame
@@ -37,6 +38,7 @@ public class treebosstwo : MonoBehaviour
             PL.unlock();
          
         }
+        
     }
     public void treeDamage(int dam)
     {
@@ -49,6 +51,7 @@ public class treebosstwo : MonoBehaviour
         }
        
     }
+    
     public void treeBurning(int dam)
     {
         treehealth = treehealth - dam;
@@ -110,10 +113,13 @@ public class treebosstwo : MonoBehaviour
     public void treeburn()
     {
         anim.SetBool("burn1", true);
-        Instantiate(AcornR, endR.position, Quaternion.identity);
-        Instantiate(Acorn, endL.position, Quaternion.identity);
-        Instantiate(AcornUR, endUR.position, Quaternion.identity);
-        Instantiate(AcornUL, endUL.position, Quaternion.identity);
+        if (treehealth >= 1)
+        {
+            Instantiate(AcornR, endR.position, Quaternion.identity);
+            Instantiate(Acorn, endL.position, Quaternion.identity);
+            Instantiate(AcornUR, endUR.position, Quaternion.identity);
+            Instantiate(AcornUL, endUL.position, Quaternion.identity);
+        }
         if (treehealth <= 160 && treehealth >= 120)
         {
             anim.SetBool("burn1", false);
@@ -134,6 +140,7 @@ public class treebosstwo : MonoBehaviour
         if(treehealth <= 0)
         {
             anim.SetBool("zero", true);
+            
         }
     }
     public void OnTriggerEnter2D(Collider2D collision)

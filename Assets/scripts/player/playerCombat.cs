@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class playerCombat : MonoBehaviour
 {
     public Rigidbody2D rb2d;
@@ -36,6 +36,7 @@ public class playerCombat : MonoBehaviour
     public bool iceSickleUp;
     //falling platform
     public int FPnum;
+    public bool treebosst;
 
     void Start()
     {
@@ -72,6 +73,10 @@ public class playerCombat : MonoBehaviour
         //death
         if (playerHealth <= 0)
         {
+            if(treebosst = true)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
             playerHealth = 100;
             mana = 100;
             gameObject.transform.position = SpawnPoint.position;
