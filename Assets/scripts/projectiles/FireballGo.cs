@@ -6,6 +6,7 @@ using UnityEngine;
 public class FireballGo : MonoBehaviour
 {
     public float speed;
+    public float leftSpeed;
     public Rigidbody2D rb;
     public CircleCollider2D cc2d;
     public int lifelimit;
@@ -27,13 +28,13 @@ public class FireballGo : MonoBehaviour
     void Update()
     {
         playerMovement PM = FindObjectOfType<playerMovement>();
-        if (PM.isLeft == false)
+        if(PM.isLeft == true)
+        {
+            this.rb.velocity = new Vector3(leftSpeed, 0, 0);
+        }
+        else
         {
             this.rb.velocity = new Vector3(speed, 0, 0);
-        }
-        else if (PM.isLeft == true)
-        {
-            this.rb.velocity = new Vector3(-speed, 0, 0);
         }
         if (lifelimit == 5)
         {

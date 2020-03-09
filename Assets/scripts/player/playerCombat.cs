@@ -125,7 +125,7 @@ public class playerCombat : MonoBehaviour
             keyCounter++;
             if (keyCounter == 1)
             {
-                GameObject fire = Instantiate(fireballObj, transform.position, Quaternion.identity) as GameObject;
+                Instantiate(fireballObj, transform.position, Quaternion.identity);
                 mana -= 50;
                 keyCounter--;
             }

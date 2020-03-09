@@ -81,7 +81,7 @@ public class treebosstwo : MonoBehaviour
             {
                 Invoke("acornSecond", 4);
                 InvokeRepeating("acornright", 5, 1);
-            }else if(treehealth <= 200 && treehealth >= 160)
+            }else if(treehealth <= 200 && treehealth >= 1)
             {
                 InvokeRepeating("treeburn", 2, 1);
             }
@@ -103,22 +103,22 @@ public class treebosstwo : MonoBehaviour
                 Invoke("acornStart", 4);
                 InvokeRepeating("acornleft", 5, 1);
             }
-            else if (treehealth <= 200 && treehealth >= 160)
+            else if (treehealth <= 200 && treehealth >= 1)
             {
-                InvokeRepeating("treeburn", 2, 1);
+                InvokeRepeating("treeburn", 1, 1);
             }
         }
 
     }
     public void treeburn()
     {
+        
         anim.SetBool("burn1", true);
         if (treehealth >= 1)
         {
             Instantiate(AcornR, endR.position, Quaternion.identity);
             Instantiate(Acorn, endL.position, Quaternion.identity);
-            Instantiate(AcornUR, endUR.position, Quaternion.identity);
-            Instantiate(AcornUL, endUL.position, Quaternion.identity);
+            
         }
         if (treehealth <= 160 && treehealth >= 120)
         {
