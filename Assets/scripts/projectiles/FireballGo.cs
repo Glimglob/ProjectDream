@@ -6,7 +6,6 @@ using UnityEngine;
 public class FireballGo : MonoBehaviour
 {
     public float speed;
-    public float leftSpeed;
     public Rigidbody2D rb;
     public CircleCollider2D cc2d;
     public int lifelimit;
@@ -19,7 +18,14 @@ public class FireballGo : MonoBehaviour
         rb = transform.GetComponent<Rigidbody2D>();
         cc2d = transform.GetComponent<CircleCollider2D>();
         StartCoroutine(lifelimitdead());
-        
+        playerMovement PM = FindObjectOfType<playerMovement>();
+        if (PM.isLeft == true)
+        {
+            this.rb.velocity = new Vector3(-speed, 0, 0);
+        }else if(PM.isLeft == false)
+        {
+            this.rb.velocity = new Vector3(speed, 0, 0);
+        }
 
 
     }
@@ -27,15 +33,9 @@ public class FireballGo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerMovement PM = FindObjectOfType<playerMovement>();
-        if(PM.isLeft == true)
-        {
-            this.rb.velocity = new Vector3(leftSpeed, 0, 0);
-        }
-        else
-        {
-            this.rb.velocity = new Vector3(speed, 0, 0);
-        }
+        
+        
+
         if (lifelimit == 5)
         {
             Destroy(gameObject);

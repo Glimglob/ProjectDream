@@ -18,6 +18,7 @@ MonoBehaviour:
   anim: {fileID: 913490428737348727}
   timer: 0
   treecol: {fileID: 0}
+  acorncc: {fileID: 0}
 --- !u!1001 &193739272268864248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29,6 +30,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: acornUL
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424025997275088261, guid: 33955d3bd1977554cae34d5169871cdd,
+        type: 3}
+      propertyPath: m_TagString
+      value: acorn
       objectReference: {fileID: 0}
     - target: {fileID: 4424025997275088259, guid: 33955d3bd1977554cae34d5169871cdd,
         type: 3}

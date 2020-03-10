@@ -12,6 +12,7 @@ public class acornUpR : MonoBehaviour
     public Collision collision;
     public float delay = 0f;
     public EdgeCollider2D treecol;
+    public CircleCollider2D acorncc;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +36,16 @@ public class acornUpR : MonoBehaviour
         {
             treecol = collision.gameObject.GetComponent<EdgeCollider2D>();
             Physics2D.IgnoreCollision(treecol, rc2d);
+        }else if (collision.gameObject.tag == "acorn")
+        {
+            acorncc = collision.gameObject.GetComponent<CircleCollider2D>();
+            Physics2D.IgnoreCollision(acorncc, rc2d);
         }
+     
         
+
             rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
+       
         
 
 

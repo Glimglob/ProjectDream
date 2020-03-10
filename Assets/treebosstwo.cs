@@ -112,10 +112,11 @@ public class treebosstwo : MonoBehaviour
     }
     public void treeburn()
     {
-        
+        StartCoroutine(upAcorn());
         anim.SetBool("burn1", true);
         if (treehealth >= 1)
         {
+            
             Instantiate(AcornR, endR.position, Quaternion.identity);
             Instantiate(Acorn, endL.position, Quaternion.identity);
             
@@ -158,5 +159,21 @@ public class treebosstwo : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-
+    IEnumerator upAcorn()
+    {
+        while (true)
+        {
+            if (treehealth >= 1)
+            {
+                Instantiate(AcornUR, endUR.position, Quaternion.identity);
+                Instantiate(AcornUL, endUL.position, Quaternion.identity);
+                yield return new WaitForSeconds(10);
+                yield return null;
+            }
+            else
+            {
+                yield return null;
+            }
+        }
+    }
 }
