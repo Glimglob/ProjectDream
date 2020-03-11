@@ -20,13 +20,14 @@ public class treebosstwo : MonoBehaviour
     public float treehealth = 350;
     public portalLock PL;
     public playerCombat PC;
+    public bool healthRevived;
     // Start is called before the first frame update
     void Start()
     {
         Invoke("acornStart", 4);
         InvokeRepeating("acornleft", 5, 1);
         anim = GetComponent<Animator>();
-       
+        healthRevived = false;
     }
 
     // Update is called once per frame
@@ -67,7 +68,7 @@ public class treebosstwo : MonoBehaviour
     public void acornleft()
     {
         
-        
+
         Instantiate(Acorn, leftAcorn.position, Quaternion.identity);
         
         acornCount += 1;
@@ -89,7 +90,7 @@ public class treebosstwo : MonoBehaviour
     }
    public void acornright()
     {
-        
+       
         Instantiate(AcornR, rightAcorn.position, Quaternion.identity);
         acornCount -= 1;
         if(acornCount == 0)
@@ -112,11 +113,15 @@ public class treebosstwo : MonoBehaviour
     }
     public void treeburn()
     {
-        StartCoroutine(upAcorn());
+        if (healthRevived == false)
+        {
+            treehealth = 199;
+            healthRevived = true;
+        }
         anim.SetBool("burn1", true);
         if (treehealth >= 1)
         {
-            
+            InvokeRepeating("upAcorn", 3, 3);
             Instantiate(AcornR, endR.position, Quaternion.identity);
             Instantiate(Acorn, endL.position, Quaternion.identity);
             
@@ -159,21 +164,11 @@ public class treebosstwo : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
-    IEnumerator upAcorn()
+   public void upAcorn()
     {
-        while (true)
-        {
-            if (treehealth >= 1)
-            {
-                Instantiate(AcornUR, endUR.position, Quaternion.identity);
-                Instantiate(AcornUL, endUL.position, Quaternion.identity);
-                yield return new WaitForSeconds(10);
-                yield return null;
-            }
-            else
-            {
-                yield return null;
-            }
-        }
+        Instantiate(AcornUR, endUR.position, Quaternion.identity);
+        Instantiate(AcornUL, endUL.position, Quaternion.identity);
+        CancelInvoke("upAcorn");
+
     }
 }
