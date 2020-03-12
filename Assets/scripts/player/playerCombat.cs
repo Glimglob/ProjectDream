@@ -86,13 +86,7 @@ public class playerCombat : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             
-            gameObject.transform.position = SpawnPoint.position;
-            rb2d.velocity = Vector3.zero;
-            rb2d.Sleep();
-            if(FPnum >= 0)
-            {
-                FindObjectOfType<fellplat>().GetPlatformBack();
-            }
+           
 
         }
         if (Input.GetMouseButtonDown(1))
@@ -115,7 +109,18 @@ public class playerCombat : MonoBehaviour
     {
         Debug.Log("This is working");
     }
-    
+    public void respawn()
+    {
+        playerHealth = 100;
+        mana = 100;
+        gameObject.transform.position = SpawnPoint.position;
+        rb2d.velocity = Vector3.zero;
+        rb2d.Sleep();
+        if (FPnum >= 0)
+        {
+            FindObjectOfType<fellplat>().GetPlatformBack();
+        }
+    }
 
     
     public void fireball()
